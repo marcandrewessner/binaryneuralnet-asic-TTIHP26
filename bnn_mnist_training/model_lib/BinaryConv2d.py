@@ -29,7 +29,7 @@ class BinaryConv2d(nn.Module):
     quantized_weights = _QuantizeBinarySTE.apply(self.weights)
     return nn.functional.conv2d(
       x,
-      self.weights,
+      quantized_weights,
       bias=None,
       stride=self._stride,
     )

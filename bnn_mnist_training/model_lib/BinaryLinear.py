@@ -5,11 +5,11 @@ import torch.nn.functional as F
 from .QuantizeBinary import _QuantizeBinarySTE
 
 class BinaryLinear(nn.Module):
-    def __init__(self, in_features, out_features, bias=True):
+    def __init__(self, in_features, out_features):
         super().__init__()
         # Real-valued weights — these are what the optimizer actually updates
         self.weight = nn.Parameter(torch.empty(out_features, in_features))
-        self.bias = nn.Parameter(torch.zeros(out_features)) if bias else None
+        self.bias =  None
         nn.init.kaiming_uniform_(self.weight)
 
     def forward(self, x):

@@ -36,13 +36,19 @@ class FullBNN(nn.Module):
         stride=1
       ),
       nn.MaxPool2d(2,2),
+      BinaryConv2d(
+        in_channels=16,
+        out_channels=64,
+        kernel_size=2,
+        stride=1
+      ),
     )
     self.classifier = nn.Sequential(
       nn.Flatten(),
       nn.Dropout(),
-      BinaryLinear(16*2*2, 16),
+      BinaryLinear(64, 32),
       nn.Dropout(),
-      BinaryLinear(16, 10),
+      nn.Linear(32, 10),
     )
 
   def forward(self, x):
@@ -55,6 +61,9 @@ class FullBNN(nn.Module):
 if __name__ == "__main__":
   model_main(
     FullBNN(),
-    n_epochs=20,
-    learning_rate=1e-4,
+    n_epochs=100,
+    lr=1e-3,
+    lr_sched_gamma=0.1,
+    lr_sched_step_epochs=10,
+    continue_learning=False,
   )

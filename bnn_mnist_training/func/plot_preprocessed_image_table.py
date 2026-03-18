@@ -34,6 +34,8 @@ def plot_preprocessed_image_table(
     axes[1, 0].set_ylabel("Preprocessed", fontsize=10, fontweight="bold")
 
     model.eval()
+    param = next(model.parameters(), None)
+    device = param.device if param is not None else torch.device('cpu')
     with torch.no_grad():
         for i, (img, label) in enumerate(zip(images, labels)):
             # ── original ────────────────────────────────────────────────
@@ -46,7 +48,7 @@ def plot_preprocessed_image_table(
             axes[0, i].set_yticks([])
 
             # ── compressed ──────────────────────────────────────────────
-            compressed = model(img.unsqueeze(0))  # (1,1,H,W)
+            compressed = model(img.unsqueeze(0).to(device))  # (1,1,H,W)
             comp_np = pltimg(compressed)
             h_c, w_c = comp_np.shape
             ratio = (h_c * w_c) / (h_o * w_o)

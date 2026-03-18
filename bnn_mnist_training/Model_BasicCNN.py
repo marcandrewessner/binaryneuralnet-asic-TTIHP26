@@ -25,10 +25,10 @@ class BasicCNN(nn.Module):
     self.classifier = nn.Sequential(
       nn.Flatten(),
       nn.Dropout(),
-      nn.Linear(32*10*10, 32*10*10//4),
+      nn.Linear(32*10*10, 32),
       nn.ReLU(),
       nn.Dropout(),
-      nn.Linear(32*10*10//4, 10),
+      nn.Linear(32, 10),
     )
 
   def forward(self, x):
@@ -41,5 +41,6 @@ class BasicCNN(nn.Module):
 if __name__ == "__main__":
   model_main(
     BasicCNN(),
-    n_epochs=10,
+    n_epochs=25,
+    learning_rate=1e-3,
   )

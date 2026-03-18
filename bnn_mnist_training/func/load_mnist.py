@@ -4,7 +4,7 @@
 import torch
 import torchvision
 
-def load_mnist(dir_path="./data"):
+def load_mnist(dir_path="./data", pin_memory=False):
   train_dataset = torchvision.datasets.MNIST(
     dir_path,
     transform=torchvision.transforms.ToTensor(),
@@ -19,15 +19,19 @@ def load_mnist(dir_path="./data"):
   )
   train_dataloader = torch.utils.data.DataLoader(
     train_dataset,
-    batch_size=64,
+    batch_size=2048,
     shuffle=True,
-    num_workers=2,
+    num_workers=4,
+    pin_memory=pin_memory,
+    persistent_workers=True,
   )
   validation_loader = torch.utils.data.DataLoader(
     validation_dataset,
-    batch_size=64,
+    batch_size=2048,
     shuffle=True,
-    num_workers=2,
+    num_workers=4,
+    pin_memory=pin_memory,
+    persistent_workers=True,
   )
 
   return train_dataloader, validation_loader

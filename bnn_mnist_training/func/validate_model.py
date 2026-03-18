@@ -8,7 +8,7 @@ class ValidateModelRecord():
   normalized_loss:float
   total_accuracy:float
 
-def validate_model(model:nn.Module, criterion:nn.Module, dataloader:torch.utils.data.DataLoader):
+def validate_model(model:nn.Module, criterion:nn.Module, dataloader:torch.utils.data.DataLoader, device:torch.device):
   model.eval()
 
   total_loss = 0
@@ -16,6 +16,7 @@ def validate_model(model:nn.Module, criterion:nn.Module, dataloader:torch.utils.
 
   with torch.no_grad():
     for batch_data, batch_labels in dataloader:
+      batch_data, batch_labels = batch_data.to(device), batch_labels.to(device)
       inference = model(batch_data)
       total_loss += criterion(inference, batch_labels).item()
       total_corrects += (inference.argmax(dim=1) == batch_labels).sum().item()
