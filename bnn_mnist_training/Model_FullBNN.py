@@ -37,22 +37,13 @@ class FullBNN(nn.Module):
       ),
       nn.MaxPool2d(2,2),
     )
-    fully_binaryclassifier = nn.Sequential(
+    self.classifier = nn.Sequential(
       nn.Flatten(),
       nn.Dropout(),
       BinaryLinear(16*2*2, 16),
       nn.Dropout(),
       BinaryLinear(16, 10),
     )
-    classic_classifier = nn.Sequential(
-      nn.Flatten(),
-      nn.Dropout(),
-      nn.LazyLinear(32),
-      nn.ReLU(),
-      nn.Dropout(),
-      nn.LazyLinear(10),
-    )
-    self.classifier = fully_binaryclassifier
 
   def forward(self, x):
     x = self.preprocess(x)
