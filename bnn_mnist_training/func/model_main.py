@@ -17,8 +17,9 @@ from func.validate_model import validate_model
 def _get_device():
   if torch.cuda.is_available():
     return torch.device('cuda')
-  if torch.backends.mps.is_available():
-    return torch.device('mps')
+  # SKIP MPS FOR NOW!
+  #if torch.backends.mps.is_available(): 
+  #  return torch.device('mps')
   return torch.device('cpu')
 
 

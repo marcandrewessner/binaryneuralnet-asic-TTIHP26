@@ -61,7 +61,7 @@ class FullBNN(nn.Module):
 if __name__ == "__main__":
   model_main(
     FullBNN(),
-    n_epochs=100,
+    n_epochs=5,
     lr=1e-3,
     lr_sched_gamma=0.1,
     lr_sched_step_epochs=10,
