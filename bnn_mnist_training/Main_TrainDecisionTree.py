@@ -6,6 +6,7 @@ import pandas as pd
 import torch
 import xgboost as xgb
 
+from IPython import embed
 from sklearn.metrics import accuracy_score
 
 from func.binarize_embeddings import binarize_embeddings
@@ -19,15 +20,21 @@ def main():
   model_save_path      = "data/model_weights/xgb_decision_tree.json"
   ae_weights_path      = "data/model_weights/QuantizedAE.pnn"
 
-  train_dl, val_dl = load_mnist()
+  rebuild_embeddings = False
 
-  train_df = build_embedding_table(train_dl, ae_weights_path)
-  val_df   = build_embedding_table(val_dl,   ae_weights_path)
+  if rebuild_embeddings:
+    train_dl, val_dl = load_mnist()
 
-  train_df.to_parquet(embedding_train_path, index=False)
-  val_df.to_parquet(embedding_val_path,     index=False)
-  print(f"[train] saved {len(train_df)} rows → {embedding_train_path}")
-  print(f"[val]   saved {len(val_df)} rows → {embedding_val_path}")
+    train_df = build_embedding_table(train_dl, ae_weights_path)
+    val_df   = build_embedding_table(val_dl,   ae_weights_path)
+
+    train_df.to_parquet(embedding_train_path, index=False)
+    val_df.to_parquet(embedding_val_path,     index=False)
+    print(f"[train] saved {len(train_df)} rows → {embedding_train_path}")
+    print(f"[val]   saved {len(val_df)} rows → {embedding_val_path}")
+  else:
+    train_df = pd.read_parquet(embedding_train_path)
+    val_df   = pd.read_parquet(embedding_val_path)
 
   train_decision_tree(train_df, val_df, model_save_path)
 
@@ -63,20 +70,23 @@ def build_embedding_table(dataloader, ae_weights_path):
 def train_decision_tree(train_df, val_df, model_save_path):
   feature_cols = [c for c in train_df.columns if c != "label"]
 
-  X_train = train_df[feature_cols].values
-  y_train = train_df["label"].values
-  X_val   = val_df[feature_cols].values
-  y_val   = val_df["label"].values
+  # Cast each binary feature to categorical so XGBoost treats {-1, 1} as symbols
+  X_train = train_df[feature_cols].astype("category")
+  X_val   = val_df[feature_cols].astype("category")
 
-  dtrain = xgb.DMatrix(X_train, label=y_train)
-  dval   = xgb.DMatrix(X_val,   label=y_val)
+  # Explicit int cast so XGBoost sees class indices, not floats
+  y_train = train_df["label"].values.astype(int)
+  y_val   = val_df["label"].values.astype(int)
+
+  dtrain = xgb.DMatrix(X_train, label=y_train, enable_categorical=True)
+  dval   = xgb.DMatrix(X_val,   label=y_val,   enable_categorical=True)
 
   params = {
     "objective":        "multi:softmax",
     "num_class":        10,
     "tree_method":      "hist",
-    "max_depth":        6,
-    "eta":              0.1,
+    "max_depth":        3,
+    "eta":              0.8,
     "subsample":        0.8,
     "eval_metric":      "merror",
   }
@@ -85,10 +95,10 @@ def train_decision_tree(train_df, val_df, model_save_path):
   booster = xgb.train(
     params,
     dtrain,
-    num_boost_round=200,
+    num_boost_round=10,
     evals=evals,
     early_stopping_rounds=20,
-    verbose_eval=10,
+    verbose_eval=5,
   )
 
   booster.save_model(model_save_path)
