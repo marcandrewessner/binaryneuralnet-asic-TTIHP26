@@ -1,6 +1,6 @@
 from torch import nn
 
-from func.model_main import model_main
+from func.model_main import model_main_classifier
 
 from model_lib.LearnableShift import LearnableShift
 from model_lib.QuantizeBinary import QuantizeBinary
@@ -50,7 +50,7 @@ class TowardsBNN(nn.Module):
   
 
 if __name__ == "__main__":
-  model_main(
+  model_main_classifier(
     TowardsBNN(),
     n_epochs=15,
     learning_rate=1e-3,

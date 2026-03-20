@@ -1,6 +1,6 @@
 from torch import nn
 
-from func.model_main import model_main
+from func.model_main import model_main_classifier
 
 
 # This model achieves with a training of 5 epochs
@@ -39,7 +39,7 @@ class BasicCNN(nn.Module):
   
 
 if __name__ == "__main__":
-  model_main(
+  model_main_classifier(
     BasicCNN(),
     n_epochs=25,
     learning_rate=1e-3,
