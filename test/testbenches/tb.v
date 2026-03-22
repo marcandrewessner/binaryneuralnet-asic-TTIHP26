@@ -8,9 +8,9 @@ module tb ();
 
   // Dump the signals to a FST file. You can view it with gtkwave or surfer.
   initial begin
-    $dumpfile("tb.fst");
+    $dumpfile("waves/tb.fst");
     $dumpvars(0, tb);
-    #1;
+    //#1;
   end
 
   // Wire up the inputs and outputs:
@@ -24,15 +24,15 @@ module tb ();
   wire [7:0] uio_oe;
 
   // Replace tt_um_example with your module name:
-  tt_um_example user_project (
-      .ui_in  (ui_in),    // Dedicated inputs
-      .uo_out (uo_out),   // Dedicated outputs
-      .uio_in (uio_in),   // IOs: Input path
-      .uio_out(uio_out),  // IOs: Output path
-      .uio_oe (uio_oe),   // IOs: Enable path (active high: 0=input, 1=output)
-      .ena    (ena),      // enable - goes high when design is selected
-      .clk    (clk),      // clock
-      .rst_n  (rst_n)     // not reset
+  tt_um_maw_mnistbnn user_project (
+    .ui_in  (ui_in),    // Dedicated inputs
+    .uo_out (uo_out),   // Dedicated outputs
+    .uio_in (uio_in),   // IOs: Input path
+    .uio_out(uio_out),  // IOs: Output path
+    .uio_oe (uio_oe),   // IOs: Enable path (active high: 0=input, 1=output)
+    .ena    (ena),      // enable - goes high when design is selected
+    .clk    (clk),      // clock
+    .rst_n  (rst_n)     // not reset
   );
 
 endmodule

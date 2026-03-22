@@ -1,4 +1,9 @@
 {
   "verilog.linting.linter": "verilator",
-  "verilog.formatting.verilogHDL.formatter": "verible-verilog-format"
+  "verilog.formatting.verilogHDL.formatter": "verible-verilog-format",
+  "verilog.linting.verilator.includePath": [
+    "${workspaceFolder}/src",
+    "${workspaceFolder}/test",
+    "${workspaceFolder}/test/testbenches"
+  ],
 }

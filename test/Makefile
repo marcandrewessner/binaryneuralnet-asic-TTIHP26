@@ -6,7 +6,7 @@ SIM ?= icarus
 FST ?= -fst # Use more efficient FST format
 TOPLEVEL_LANG ?= verilog
 SRC_DIR = $(PWD)/../src
-PROJECT_SOURCES = project.v
+PROJECT_SOURCES = project.v counter4bit.sv
 
 ifneq ($(GATES),yes)
 
@@ -33,11 +33,14 @@ endif
 COMPILE_ARGS 		+= -I$(SRC_DIR)
 
 # Include the testbench sources:
-VERILOG_SOURCES += $(PWD)/tb.v
-TOPLEVEL = tb
+VERILOG_SOURCES += $(wildcard $(PWD)/testbenches/*.v) $(wildcard $(PWD)/testbenches/*.sv)
+TOPLEVEL ?= tb
+
+# Specify where the python files can be found for testing
+export PYTHONPATH := $(PWD)/testmodules:$(PYTHONPATH)
 
 # List test modules to run, separated by commas and without the .py suffix:
-COCOTB_TEST_MODULES = test
+COCOTB_TEST_MODULES ?= test
 
 # include cocotb's make rules to take care of the simulator setup
 include $(shell cocotb-config --makefiles)/Makefile.sim
