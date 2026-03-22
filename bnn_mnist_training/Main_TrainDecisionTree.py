@@ -20,7 +20,7 @@ def main():
   model_save_path      = "data/model_weights/xgb_decision_tree.json"
   ae_weights_path      = "data/model_weights/QuantizedAE.pnn"
 
-  rebuild_embeddings = False
+  rebuild_embeddings = True
 
   if rebuild_embeddings:
     train_dl, val_dl = load_mnist()
