@@ -64,7 +64,7 @@ module mnist_loader (
   always_ff @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       packet_counter <= 7'd0;
-      state          <= data_in_clk ? CLK_IN_HIGH : CLK_IN_LOW;
+      state          <= CLK_IN_LOW;
     end else begin
       case (state)
         CLK_IN_LOW: begin
