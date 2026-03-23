@@ -6,13 +6,16 @@ SIM ?= icarus
 FST ?= -fst # Use more efficient FST format
 TOPLEVEL_LANG ?= verilog
 SRC_DIR = $(PWD)/../src
-PROJECT_SOURCES = project.v counter4bit.sv
+PROJECT_SOURCES = project.v counter4bit.sv sram.sv mnist_loader.sv
 
 ifneq ($(GATES),yes)
 
 # RTL simulation:
 SIM_BUILD				= sim_build/rtl
+COMPILE_ARGS    += -DFUNCTIONAL
 VERILOG_SOURCES += $(addprefix $(SRC_DIR)/,$(PROJECT_SOURCES))
+# Add the sram macro
+VERILOG_SOURCES += $(PWD)/../macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.v
 
 else
 
@@ -31,6 +34,9 @@ endif
 
 # Allow sharing configuration between design and testbench via `include`:
 COMPILE_ARGS 		+= -I$(SRC_DIR)
+
+# Include the behavioural macros:
+VERILOG_SOURCES += $(PWD)/macros/RM_IHPSG13_1P_core_behavioral_bm_bist.v
 
 # Include the testbench sources:
 VERILOG_SOURCES += $(wildcard $(PWD)/testbenches/*.v) $(wildcard $(PWD)/testbenches/*.sv)
