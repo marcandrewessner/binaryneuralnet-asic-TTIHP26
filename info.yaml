@@ -18,32 +18,44 @@ project:
   # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
   source_files:
     - "project.v"
+    - "sram.sv"
+    - "mnist_loader.sv"
+    - "load_conv_op_3x6.sv"
+    - "conv_weights_3x3_l1.sv"
+    - "conv_weights_3x3_l2.sv"
+    - "conv_weights_2x2_l3.sv"
+    - "conv_layer1.sv"
+    - "conv_layer2.sv"
+    - "conv_layer3.sv"
+    - "classification_tree.sv"
+    - "maxpool_2x2.sv"
+    - "main.sv"
 
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 # This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
 pinout:
-  # Inputs
-  ui[0]: ""
-  ui[1]: ""
-  ui[2]: ""
-  ui[3]: ""
-  ui[4]: ""
-  ui[5]: ""
-  ui[6]: ""
-  ui[7]: ""
+  # Inputs — 8-bit MNIST pixel data (two OR-pooled 2×2 blocks per byte, row-major)
+  ui[0]: "data_in[0]"
+  ui[1]: "data_in[1]"
+  ui[2]: "data_in[2]"
+  ui[3]: "data_in[3]"
+  ui[4]: "data_in[4]"
+  ui[5]: "data_in[5]"
+  ui[6]: "data_in[6]"
+  ui[7]: "data_in[7]"
 
   # Outputs
-  uo[0]: ""
-  uo[1]: ""
-  uo[2]: ""
-  uo[3]: ""
-  uo[4]: ""
+  uo[0]: "number_o[0]"
+  uo[1]: "number_o[1]"
+  uo[2]: "number_o[2]"
+  uo[3]: "number_o[3]"
+  uo[4]: "inference_done_o"
   uo[5]: ""
   uo[6]: ""
   uo[7]: ""
 
   # Bidirectional pins
-  uio[0]: ""
+  uio[0]: "data_in_clk"
   uio[1]: ""
   uio[2]: ""
   uio[3]: ""

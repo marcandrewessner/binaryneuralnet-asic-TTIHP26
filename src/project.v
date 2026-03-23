@@ -16,18 +16,23 @@ module tt_um_maw_mnistbnn (
     input  wire       rst_n     // reset_n - low to reset
 );
 
-  assign uo_out  = 0;
-  assign uio_oe  = 0;
-  assign uio_out = 0;
+  wire [3:0] number_o;
+  wire       inference_done_o;
+
+  assign uo_out  = {3'b000, inference_done_o, number_o};
+  assign uio_oe  = 8'h00;   // all bidirectional pins are inputs
+  assign uio_out = 8'h00;
 
   main m (
-    .clk_i(clk),
-    .rst_ni(rst_n),
-    .data_in_clk(uio_in[0]),
-    .data_in(ui_in)
+    .clk_i           (clk),
+    .rst_ni          (rst_n),
+    .data_in_clk     (uio_in[0]),
+    .data_in         (ui_in),
+    .number_o        (number_o),
+    .inference_done_o(inference_done_o)
   );
 
   // List all unused inputs to prevent warnings
-  wire _unused = &{ena};
+  wire _unused = &{ena, uio_in[7:1]};
 
 endmodule
