@@ -83,7 +83,7 @@ module conv_layer2 (
 
   // Address calculation: byte-align starting bit = ci*36 + row_out*6
   logic [8:0] base_bit;
-  assign base_bit = 9'(ci) * 9'd36 + 9'(row_out) * 9'd6;
+  assign base_bit = {6'b0, ci} * 9'd36 + {7'b0, row_out} * 9'd6;
 
   logic [7:0] load_ptr;
   logic [7:0] load_bit_off;
@@ -157,7 +157,7 @@ module conv_layer2 (
                                        acc[co][3];
 
   logic maj_bit;
-  assign maj_bit = (acc_sel >= 7'(THRESHOLD)) ? 1'b1 : 1'b0;
+  assign maj_bit = (acc_sel >= 7'd37) ? 1'b1 : 1'b0;
 
   // SRAM write request
   sram_req_t sram_req_write;
@@ -224,10 +224,10 @@ module conv_layer2 (
         // Cycle through all 16 output channels, accumulating popcounts
         // buffer_reg is valid (latched one cycle after loader_ready)
         ACCUM_CO: begin
-          acc[co][0] <= acc[co][0] + 7'(conv_out0);
-          acc[co][1] <= acc[co][1] + 7'(conv_out1);
-          acc[co][2] <= acc[co][2] + 7'(conv_out2);
-          acc[co][3] <= acc[co][3] + 7'(conv_out3);
+          acc[co][0] <= acc[co][0] + {2'b00, conv_out0};
+          acc[co][1] <= acc[co][1] + {2'b00, conv_out1};
+          acc[co][2] <= acc[co][2] + {2'b00, conv_out2};
+          acc[co][3] <= acc[co][3] + {2'b00, conv_out3};
           if (co == 4'd15) begin
             co    <= 4'd0;
             state <= ADVANCE_CI;

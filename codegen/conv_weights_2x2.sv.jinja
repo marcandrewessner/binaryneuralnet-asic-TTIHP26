@@ -32,7 +32,7 @@ module {{ module_name }} (
         {%- for c in range(2) %}
           {%- set bit_idx = 63 - (ci*4 + r*2 + c) %}
           {%- set w = weights[co][ci][r][c] %}
-          {%- set _ = terms.val.append("7'(!(1'b" + w|string + " ^ data_in[" + bit_idx|string + "]))") %}
+          {%- set _ = terms.val.append("{6'b0,!(1'b" + w|string + " ^ data_in[" + bit_idx|string + "])}") %}
         {%- endfor %}
       {%- endfor %}
     {%- endfor %}

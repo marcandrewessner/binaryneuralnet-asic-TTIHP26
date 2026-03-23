@@ -41,17 +41,17 @@ module load_conv_op_3x6 (
   //   start_bit_rN = data_bit_offset_i + N * stride_i
   // ---------------------------------------------------------------------------
   logic [9:0] start_bit_r0, start_bit_r1, start_bit_r2;
-  assign start_bit_r0 = 10'(data_bit_offset_i);
-  assign start_bit_r1 = 10'(data_bit_offset_i) + 10'(stride_i);
-  assign start_bit_r2 = 10'(data_bit_offset_i) + 10'({stride_i, 1'b0}); // 2*stride
+  assign start_bit_r0 = {2'b00, data_bit_offset_i};
+  assign start_bit_r1 = {2'b00, data_bit_offset_i} + {2'b00, stride_i};
+  assign start_bit_r2 = {2'b00, data_bit_offset_i} + {1'b0, stride_i, 1'b0}; // 2*stride
 
   // Per-row SRAM byte addresses (A = first byte, B = second byte of each row)
   logic [7:0] addr_a0, addr_b0, addr_a1, addr_b1, addr_a2, addr_b2;
-  assign addr_a0 = data_pointer_i + 8'(start_bit_r0 >> 3);
+  assign addr_a0 = data_pointer_i + {1'b0, start_bit_r0[9:3]};
   assign addr_b0 = addr_a0 + 8'd1;
-  assign addr_a1 = data_pointer_i + 8'(start_bit_r1 >> 3);
+  assign addr_a1 = data_pointer_i + {1'b0, start_bit_r1[9:3]};
   assign addr_b1 = addr_a1 + 8'd1;
-  assign addr_a2 = data_pointer_i + 8'(start_bit_r2 >> 3);
+  assign addr_a2 = data_pointer_i + {1'b0, start_bit_r2[9:3]};
   assign addr_b2 = addr_a2 + 8'd1;
 
   // Per-row bit offset within the first byte (0 = MSB of byte)
@@ -77,7 +77,7 @@ module load_conv_op_3x6 (
     logic [15:0] shifted;
     combined = {byte_a, byte_b};
     shifted = combined >> (4'd10 - {1'b0, bit_off});
-    return shifted[5:0];
+    extract6 = shifted[5:0];
   endfunction
 
   // ---------------------------------------------------------------------------

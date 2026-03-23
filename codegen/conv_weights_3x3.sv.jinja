@@ -58,18 +58,18 @@ module {{ module_name }} #(
 
   // XNOR-popcount for 4 sliding 3x3 positions
   // data_out_j = count of (weight == activation) pairs, range 0..9
-  assign data_out_0 = 5'(!(w11 ^ data_in[17])) + 5'(!(w12 ^ data_in[16])) + 5'(!(w13 ^ data_in[15]))
-                    + 5'(!(w21 ^ data_in[11])) + 5'(!(w22 ^ data_in[10])) + 5'(!(w23 ^ data_in[ 9]))
-                    + 5'(!(w31 ^ data_in[ 5])) + 5'(!(w32 ^ data_in[ 4])) + 5'(!(w33 ^ data_in[ 3]));
-  assign data_out_1 = 5'(!(w11 ^ data_in[16])) + 5'(!(w12 ^ data_in[15])) + 5'(!(w13 ^ data_in[14]))
-                    + 5'(!(w21 ^ data_in[10])) + 5'(!(w22 ^ data_in[ 9])) + 5'(!(w23 ^ data_in[ 8]))
-                    + 5'(!(w31 ^ data_in[ 4])) + 5'(!(w32 ^ data_in[ 3])) + 5'(!(w33 ^ data_in[ 2]));
-  assign data_out_2 = 5'(!(w11 ^ data_in[15])) + 5'(!(w12 ^ data_in[14])) + 5'(!(w13 ^ data_in[13]))
-                    + 5'(!(w21 ^ data_in[ 9])) + 5'(!(w22 ^ data_in[ 8])) + 5'(!(w23 ^ data_in[ 7]))
-                    + 5'(!(w31 ^ data_in[ 3])) + 5'(!(w32 ^ data_in[ 2])) + 5'(!(w33 ^ data_in[ 1]));
-  assign data_out_3 = 5'(!(w11 ^ data_in[14])) + 5'(!(w12 ^ data_in[13])) + 5'(!(w13 ^ data_in[12]))
-                    + 5'(!(w21 ^ data_in[ 8])) + 5'(!(w22 ^ data_in[ 7])) + 5'(!(w23 ^ data_in[ 6]))
-                    + 5'(!(w31 ^ data_in[ 2])) + 5'(!(w32 ^ data_in[ 1])) + 5'(!(w33 ^ data_in[ 0]));
+  assign data_out_0 = {4'b0,!(w11^data_in[17])} + {4'b0,!(w12^data_in[16])} + {4'b0,!(w13^data_in[15])}
+                    + {4'b0,!(w21^data_in[11])} + {4'b0,!(w22^data_in[10])} + {4'b0,!(w23^data_in[ 9])}
+                    + {4'b0,!(w31^data_in[ 5])} + {4'b0,!(w32^data_in[ 4])} + {4'b0,!(w33^data_in[ 3])};
+  assign data_out_1 = {4'b0,!(w11^data_in[16])} + {4'b0,!(w12^data_in[15])} + {4'b0,!(w13^data_in[14])}
+                    + {4'b0,!(w21^data_in[10])} + {4'b0,!(w22^data_in[ 9])} + {4'b0,!(w23^data_in[ 8])}
+                    + {4'b0,!(w31^data_in[ 4])} + {4'b0,!(w32^data_in[ 3])} + {4'b0,!(w33^data_in[ 2])};
+  assign data_out_2 = {4'b0,!(w11^data_in[15])} + {4'b0,!(w12^data_in[14])} + {4'b0,!(w13^data_in[13])}
+                    + {4'b0,!(w21^data_in[ 9])} + {4'b0,!(w22^data_in[ 8])} + {4'b0,!(w23^data_in[ 7])}
+                    + {4'b0,!(w31^data_in[ 3])} + {4'b0,!(w32^data_in[ 2])} + {4'b0,!(w33^data_in[ 1])};
+  assign data_out_3 = {4'b0,!(w11^data_in[14])} + {4'b0,!(w12^data_in[13])} + {4'b0,!(w13^data_in[12])}
+                    + {4'b0,!(w21^data_in[ 8])} + {4'b0,!(w22^data_in[ 7])} + {4'b0,!(w23^data_in[ 6])}
+                    + {4'b0,!(w31^data_in[ 2])} + {4'b0,!(w32^data_in[ 1])} + {4'b0,!(w33^data_in[ 0])};
 
   // Weight selection: {select_channel_out, select_channel_in} → w11..w33
   always_comb begin
