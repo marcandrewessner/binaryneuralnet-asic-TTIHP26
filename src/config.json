@@ -43,30 +43,30 @@
         }
       },
       "gds": [
-        "dir::../marcos/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds"
+        "dir::../macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds"
       ],
       "lef": [
-        "dir::../marcos/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.lef"
+        "dir::../macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.lef"
       ],
       "lib": {
         "nom_*": [
-          "dir::../marcos/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist_typ_1p20V_25C.lib"
+          "dir::../macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist_typ_1p20V_25C.lib"
         ],
         "min_*": [
-          "dir::../marcos/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist_fast_1p32V_m55C.lib"
+          "dir::../macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist_fast_1p32V_m55C.lib"
         ],
         "max_*": [
-          "dir::../marcos/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist_slow_1p08V_125C.lib"
+          "dir::../macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist_slow_1p08V_125C.lib"
         ],
         "*": [
-          "dir::../marcos/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist_typ_1p20V_25C.lib"
+          "dir::../macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist_typ_1p20V_25C.lib"
         ]
       },
       "nl": [
-        "dir::../marcos/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.v"
+        "dir::../macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.v"
       ],
       "spice": [
-        "dir::../marcos/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.cdl"
+        "dir::../macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.cdl"
       ]
     }
   },
