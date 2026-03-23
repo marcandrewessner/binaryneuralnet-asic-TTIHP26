@@ -22,7 +22,15 @@ module main (
 
   // Inference result
   output logic [3:0]  number_o,
-  output logic        inference_done_o
+  output logic        inference_done_o,
+
+  // SRAM bus (macro instantiated in top-level project.v)
+  output logic [7:0]  sram_addr_o,
+  output logic [7:0]  sram_bm_o,
+  output logic        sram_wen_o,
+  output logic        sram_ren_o,
+  output logic [7:0]  sram_din_o,
+  input  logic [7:0]  sram_dout_i
 );
 
   // -----------------------------------------------------------------------
@@ -31,25 +39,12 @@ module main (
   sram_req_t sram_req;
   sram_rsp_t sram_rsp;
 
-  RM_IHPSG13_1P_256x8_c3_bm_bist sram (
-    .A_CLK (clk_i),
-    .A_MEN (rst_ni),
-    .A_WEN (sram_req.wen),
-    .A_REN (sram_req.ren),
-    .A_ADDR(sram_req.addr),
-    .A_DIN (sram_req.din),
-    .A_DLY (1'b1),
-    .A_DOUT(sram_rsp.dout),
-    .A_BM  (sram_req.bm),
-    .A_BIST_EN  (1'b0),
-    .A_BIST_CLK (1'b0),
-    .A_BIST_MEN (1'b0),
-    .A_BIST_REN (1'b0),
-    .A_BIST_WEN (1'b0),
-    .A_BIST_ADDR(8'h00),
-    .A_BIST_DIN (8'h00),
-    .A_BIST_BM  (8'h00)
-  );
+  assign sram_addr_o   = sram_req.addr;
+  assign sram_bm_o     = sram_req.bm;
+  assign sram_wen_o    = sram_req.wen;
+  assign sram_ren_o    = sram_req.ren;
+  assign sram_din_o    = sram_req.din;
+  assign sram_rsp.dout = sram_dout_i;
 
   // -----------------------------------------------------------------------
   // Per-module SRAM req buses
