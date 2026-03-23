@@ -74,8 +74,10 @@ module load_conv_op_3x6 (
     input logic [2:0] bit_off
   );
     logic [15:0] combined;
+    logic [15:0] shifted;
     combined = {byte_a, byte_b};
-    return 6'(combined >> (4'd10 - {1'b0, bit_off}));
+    shifted = combined >> (4'd10 - {1'b0, bit_off});
+    return shifted[5:0];
   endfunction
 
   // ---------------------------------------------------------------------------
