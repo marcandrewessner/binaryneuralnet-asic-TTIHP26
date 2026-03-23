@@ -1,0 +1,71 @@
+
+// ============================================
+//   DONT TOUCH THIS IS GENERATED! // CODEGEN
+// ============================================
+//
+// Classification tree for MNIST (10 classes, binarized embeddings)
+//
+// Input:  embedding_i[63:0]
+//           bit i = 1  →  feature e_i = +1
+//           bit i = 0  →  feature e_i = -1
+//
+// Output: number_o[3:0]  predicted class 0-9
+//
+// Structure:
+//   {{ num_rounds }} boosting rounds × {{ num_classes }} classes = {{ num_rounds * num_classes }} trees
+//   Each tree returns a 2-bit quantized leaf score (0-3)
+//   Per-class score = sum of {{ num_rounds }} tree outputs  (0-30, 5 bits)
+//   Argmax over 10 scores → output class
+
+{%- macro render_node(node, depth, fn_name) %}
+{%- set ind = '  ' * (depth + 1) %}
+{%- if node.type == 'leaf' %}
+{{ ind }}{{ fn_name }} = 2'd{{ node.value }};
+{%- else %}
+{{ ind }}if (!emb[{{ node.feature }}]) begin  // e{{ node.feature }}==-1
+{{ render_node(node.yes, depth + 1, fn_name) }}
+{{ ind }}end else begin  // e{{ node.feature }}==+1
+{{ render_node(node.no, depth + 1, fn_name) }}
+{{ ind }}end
+{%- endif %}
+{%- endmacro %}
+
+module classification_tree (
+  input  logic [63:0] embedding_i,
+  output logic  [3:0] number_o
+);
+
+  // ── Per-tree combinational functions ────────────────────────────────────
+{% for tid in range(num_rounds * num_classes) %}
+  // tree {{ tid }}: class {{ tid % num_classes }}, round {{ tid // num_classes }}
+  function automatic [1:0] tree_{{ tid }};
+    input logic [63:0] emb;
+  begin
+{{ render_node(trees[tid], 0, 'tree_' ~ tid) }}
+  end
+  endfunction
+{% endfor %}
+
+  // ── Per-class score accumulation (sum of {{ num_rounds }} tree outputs, 0..30) ─
+{% for cl in range(num_classes) %}
+  logic [4:0] score_{{ cl }};
+  assign score_{{ cl }} =
+{% for r in range(num_rounds) %}
+    5'(tree_{{ r * num_classes + cl }}(embedding_i)){{ ' +' if not loop.last else ';' }}
+{% endfor %}
+{% endfor %}
+
+  // ── Argmax: linear scan, ties broken by lower class index ───────────────
+  logic [4:0] max_score;
+  always_comb begin
+    number_o  = 4'd0;
+    max_score = score_0;
+{% for cl in range(1, num_classes) %}
+    if (score_{{ cl }} > max_score) begin
+      max_score = score_{{ cl }};
+      number_o  = 4'd{{ cl }};
+    end
+{% endfor %}
+  end
+
+endmodule

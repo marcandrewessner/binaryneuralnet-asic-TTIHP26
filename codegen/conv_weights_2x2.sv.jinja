@@ -1,0 +1,43 @@
+
+// ============================================
+//   DONT TOUCH THIS IS GENERATED! // CODEGEN
+// ============================================
+
+// Fully combinational 2×2 BNN convolution: 16 input channels → 64 output features.
+//
+// data_in layout (MSB-first, channel-first, row-major):
+//   Pixel (ci, r, c) is at data_in[ 63 - (ci*4 + r*2 + c) ]
+//   i.e.  ci=0  → data_in[63:60]
+//         ci=1  → data_in[59:56]
+//         ...
+//         ci=15 → data_in[3:0]
+//
+// For each output channel co (0..63):
+//   sum = Σ_{ci=0}^{15} Σ_{r,c∈{0,1}} XNOR(weight[co][ci][r][c], data_in[63-(ci*4+r*2+c)])
+//   data_out[co] = (sum >= {{ threshold }}) ? 1 : 0
+//
+// Threshold = in_ch * kernel_h * kernel_w / 2 + 1 = 16*4/2 + 1 = {{ threshold }}
+
+module {{ module_name }} (
+  input  logic [63:0] data_in,
+  output logic [63:0] data_out
+);
+
+{% for co in range(channel_out) %}
+  // Output channel {{ co }}
+  assign data_out[{{ co }}] = (
+    {%- set terms = namespace(val=[]) %}
+    {%- for ci in range(channel_in) %}
+      {%- for r in range(2) %}
+        {%- for c in range(2) %}
+          {%- set bit_idx = 63 - (ci*4 + r*2 + c) %}
+          {%- set w = weights[co][ci][r][c] %}
+          {%- set _ = terms.val.append("7'(!(1'b" + w|string + " ^ data_in[" + bit_idx|string + "]))") %}
+        {%- endfor %}
+      {%- endfor %}
+    {%- endfor %}
+    {{ terms.val | join(" +\n    ") }}
+  ) >= 7'd{{ threshold }} ? 1'b1 : 1'b0;
+{% endfor %}
+
+endmodule

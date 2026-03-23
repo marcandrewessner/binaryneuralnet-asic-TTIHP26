@@ -6,7 +6,14 @@ SIM ?= icarus
 FST ?= -fst # Use more efficient FST format
 TOPLEVEL_LANG ?= verilog
 SRC_DIR = $(PWD)/../src
-PROJECT_SOURCES = project.v counter4bit.sv sram.sv mnist_loader.sv
+PROJECT_SOURCES = project.v counter4bit.sv sram.sv mnist_loader.sv \
+                  load_conv_op_3x6.sv \
+                  conv_weights_3x3_l1.sv conv_weights_3x3_l2.sv \
+                  conv_weights_2x2_l3.sv \
+                  conv_layer1.sv conv_layer2.sv conv_layer3.sv \
+                  classification_tree.sv \
+                  maxpool_2x2.sv \
+                  main.sv
 
 ifneq ($(GATES),yes)
 

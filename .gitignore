@@ -1,8 +1,5 @@
 .DS_Store
 .idea
-*.vcd
-*.fst
-*.fst.hier
 runs
 tt_submission
 src/user_config.json
@@ -15,5 +12,5 @@ test/gate_level_netlist.v
 # python project ignores
 __pycache__
 .venv
-
+.claude
 .vscode
