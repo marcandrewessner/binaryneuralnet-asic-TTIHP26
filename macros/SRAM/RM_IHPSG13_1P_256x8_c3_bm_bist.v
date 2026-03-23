@@ -133,6 +133,7 @@ module RM_IHPSG13_1P_256x8_c3_bm_bist (
 		);
 
 
+`ifndef SYNTHESIS
     specify
 
       (posedge A_CLK *> (A_DOUT : A_DIN)) = (1.0, 1.0);
@@ -168,6 +169,7 @@ module RM_IHPSG13_1P_256x8_c3_bm_bist (
 
 
     endspecify
+`endif // SYNTHESIS
 
 `endif
 
