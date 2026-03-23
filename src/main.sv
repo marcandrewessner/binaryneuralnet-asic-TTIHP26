@@ -31,11 +31,24 @@ module main (
   sram_req_t sram_req;
   sram_rsp_t sram_rsp;
 
-  sram_256x8_bm sram (
-    .clk_i   (clk_i),
-    .rst_ni  (rst_ni),
-    .sram_req(sram_req),
-    .sram_rsp(sram_rsp)
+  RM_IHPSG13_1P_256x8_c3_bm_bist sram (
+    .A_CLK (clk_i),
+    .A_MEN (rst_ni),
+    .A_WEN (sram_req.wen),
+    .A_REN (sram_req.ren),
+    .A_ADDR(sram_req.addr),
+    .A_DIN (sram_req.din),
+    .A_DLY (1'b1),
+    .A_DOUT(sram_rsp.dout),
+    .A_BM  (sram_req.bm),
+    .A_BIST_EN  (1'b0),
+    .A_BIST_CLK (1'b0),
+    .A_BIST_MEN (1'b0),
+    .A_BIST_REN (1'b0),
+    .A_BIST_WEN (1'b0),
+    .A_BIST_ADDR(8'h00),
+    .A_BIST_DIN (8'h00),
+    .A_BIST_BM  (8'h00)
   );
 
   // -----------------------------------------------------------------------
