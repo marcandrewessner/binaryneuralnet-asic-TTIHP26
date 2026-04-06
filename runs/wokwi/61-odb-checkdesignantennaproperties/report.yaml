@@ -1,0 +1,12 @@
+- cell: tt_um_maw_mnistbnn
+  inout: []
+  input:
+  - ena
+  - uio_in[1]
+  - uio_in[2]
+  - uio_in[3]
+  - uio_in[4]
+  - uio_in[5]
+  - uio_in[6]
+  - uio_in[7]
+  output: []

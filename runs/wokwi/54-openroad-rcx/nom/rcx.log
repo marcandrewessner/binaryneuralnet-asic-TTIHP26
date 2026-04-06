@@ -1,0 +1,43 @@
+Reading technology LEF file at '/home/marc-andre/binaryneuralnet-asic-TTIHP26/ttsetup/pdk/ciel/ihp-sg13g2/versions/c4b8b4e5e7a05f375cca3815d51b3a37721fbf5c/ihp-sg13g2/libs.ref/sg13g2_stdcell/lef/sg13g2_tech.lef'…
+[INFO ODB-0227] LEF file: /home/marc-andre/binaryneuralnet-asic-TTIHP26/ttsetup/pdk/ciel/ihp-sg13g2/versions/c4b8b4e5e7a05f375cca3815d51b3a37721fbf5c/ihp-sg13g2/libs.ref/sg13g2_stdcell/lef/sg13g2_tech.lef, created 19 layers, 70 vias
+Reading cell LEF file at '/home/marc-andre/binaryneuralnet-asic-TTIHP26/ttsetup/pdk/ciel/ihp-sg13g2/versions/c4b8b4e5e7a05f375cca3815d51b3a37721fbf5c/ihp-sg13g2/libs.ref/sg13g2_stdcell/lef/sg13g2_stdcell.lef'…
+[INFO ODB-0227] LEF file: /home/marc-andre/binaryneuralnet-asic-TTIHP26/ttsetup/pdk/ciel/ihp-sg13g2/versions/c4b8b4e5e7a05f375cca3815d51b3a37721fbf5c/ihp-sg13g2/libs.ref/sg13g2_stdcell/lef/sg13g2_stdcell.lef, created 84 library cells
+Reading macro LEF file at '/home/marc-andre/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.lef'…
+[INFO ODB-0227] LEF file: /home/marc-andre/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.lef, created 1 library cells
+Reading gpio pad LEF file at '/home/marc-andre/binaryneuralnet-asic-TTIHP26/ttsetup/pdk/ciel/ihp-sg13g2/versions/c4b8b4e5e7a05f375cca3815d51b3a37721fbf5c/ihp-sg13g2/libs.ref/sg13g2_io/lef/sg13g2_io.lef'…
+[INFO ODB-0227] LEF file: /home/marc-andre/binaryneuralnet-asic-TTIHP26/ttsetup/pdk/ciel/ihp-sg13g2/versions/c4b8b4e5e7a05f375cca3815d51b3a37721fbf5c/ihp-sg13g2/libs.ref/sg13g2_io/lef/sg13g2_io.lef, created 22 library cells
+[INFO ODB-0127] Reading DEF file: /home/marc-andre/binaryneuralnet-asic-TTIHP26/runs/wokwi/53-odb-cellfrequencytables/tt_um_maw_mnistbnn.def
+[INFO ODB-0128] Design: tt_um_maw_mnistbnn
+[INFO ODB-0130]     Created 45 pins.
+[INFO ODB-0131]     Created 83135 components and 247463 component-terminals.
+[INFO ODB-0132]     Created 2 special nets and 166271 connections.
+[INFO ODB-0133]     Created 25625 nets and 81152 connections.
+[INFO ODB-0134] Finished DEF file: /home/marc-andre/binaryneuralnet-asic-TTIHP26/runs/wokwi/53-odb-cellfrequencytables/tt_um_maw_mnistbnn.def
+Using RCX ruleset '/home/marc-andre/binaryneuralnet-asic-TTIHP26/ttsetup/pdk/ciel/ihp-sg13g2/versions/c4b8b4e5e7a05f375cca3815d51b3a37721fbf5c/ihp-sg13g2/libs.tech/librelane/IHP_rcx_patterns.rules'…
+[INFO RCX-0431] Defined process_corner CURRENT_CORNER with ext_model_index 0
+[INFO RCX-0029] Defined extraction corner CURRENT_CORNER
++ extract_parasitics  -ext_model_file /home/marc-andre/binaryneuralnet-asic-TTIHP26/ttsetup/pdk/ciel/ihp-sg13g2/versions/c4b8b4e5e7a05f375cca3815d51b3a37721fbf5c/ihp-sg13g2/libs.tech/librelane/IHP_rcx_patterns.rules -lef_res
+[INFO RCX-0435] Reading extraction model file /home/marc-andre/binaryneuralnet-asic-TTIHP26/ttsetup/pdk/ciel/ihp-sg13g2/versions/c4b8b4e5e7a05f375cca3815d51b3a37721fbf5c/ihp-sg13g2/libs.tech/librelane/IHP_rcx_patterns.rules ...
+[INFO RCX-0436] RC segment generation tt_um_maw_mnistbnn (max_merge_res 50.0) ...
+[INFO RCX-0040] Final 127607 rc segments
+[INFO RCX-0439] Coupling Cap extraction tt_um_maw_mnistbnn ...
+[INFO RCX-0440] Coupling threshhold is 0.1000 fF, coupling capacitance less than 0.1000 fF will be grounded.
+[INFO RCX-0442] 49% of 198065 wires extracted
+[INFO RCX-0442] 65% of 198065 wires extracted
+[INFO RCX-0442] 86% of 198065 wires extracted
+[INFO RCX-0442] 100% of 198065 wires extracted
+[INFO RCX-0045] Extract 25625 nets, 153224 rsegs, 153224 caps, 233625 ccs
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+sram matched with sram
+sram matched with sram
+[INFO ODB-0403] 0 connections made, 0 conflicts skipped.
+Updating metrics…
+Cell type report:                       Count       Area
+  Macro                                     1   17546.88
+  Fill cell                             57392  576703.41
+  Antenna cell                            104     566.09
+  Standard cell                         25638  300484.60
+  Total                                 83135  895300.98
+Writing extracted parasitics to '/home/marc-andre/binaryneuralnet-asic-TTIHP26/runs/wokwi/54-openroad-rcx/nom/tt_um_maw_mnistbnn.nom.spef'…
+[INFO RCX-0443] 25625 nets finished

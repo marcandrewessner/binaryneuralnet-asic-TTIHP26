@@ -1,0 +1,1 @@
+openroad -exit -no_splash -metrics /home/marc-andre/binaryneuralnet-asic-TTIHP26/runs/wokwi/35-openroad-cts/or_metrics_out.json /nix/store/l33lk5v0n41516xxy5nybn9yz57gn0m3-python3-3.13.9-env/lib/python3.13/site-packages/librelane/scripts/openroad/cts.tcl

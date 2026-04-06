@@ -1,0 +1,37 @@
+
+===========================================================================
+Violator List
+============================================================================
+[hold reg-reg] m.u_mnist_loader._72_/Q -> sram/A_ADDR[1] : -0.517193
+[hold reg-reg] m.u_mnist_loader._75_/Q -> sram/A_ADDR[4] : -0.509098
+[hold reg-reg] m.u_mnist_loader._71_/Q -> sram/A_ADDR[0] : -0.488351
+[hold reg-reg] m.u_mnist_loader._74_/Q -> sram/A_ADDR[3] : -0.475744
+[hold reg-reg] m.u_mnist_loader._73_/Q -> sram/A_ADDR[2] : -0.474432
+[hold reg-reg] m.u_pool2._406_/Q -> sram/A_ADDR[7] : -0.395144
+[hold reg-reg] m.u_pool2._406_/Q -> sram/A_ADDR[6] : -0.356697
+[hold reg-reg] m.u_conv2.u_loader._931_/Q -> sram/A_ADDR[5] : -0.300126
+[hold reg-reg] m.u_mnist_loader._70_/Q -> sram/A_BM[7] : -0.215338
+[hold reg-reg] m.u_conv3._584_/Q -> sram/A_REN : -0.196289
+[hold reg-reg] m.u_mnist_loader._70_/Q -> sram/A_BM[1] : -0.173872
+[hold reg-reg] m.u_mnist_loader._70_/Q -> sram/A_BM[3] : -0.170915
+[hold reg-reg] m.u_mnist_loader._70_/Q -> sram/A_DIN[0] : -0.170156
+[hold reg-reg] m.u_mnist_loader._70_/Q -> sram/A_DIN[2] : -0.168189
+[hold reg-reg] m.u_mnist_loader._70_/Q -> sram/A_DIN[1] : -0.164120
+[hold reg-reg] m.u_mnist_loader._70_/Q -> sram/A_BM[5] : -0.161796
+[hold reg-reg] m._278_/Q -> sram/A_DIN[6] : -0.160106
+[hold reg-reg] m._278_/Q -> sram/A_DIN[7] : -0.160106
+[hold reg-reg] m._278_/Q -> sram/A_DIN[4] : -0.159860
+[hold reg-reg] m.u_mnist_loader._70_/Q -> sram/A_DIN[3] : -0.159246
+[hold reg-reg] m._278_/Q -> sram/A_BM[0] : -0.157904
+[hold reg-reg] m._278_/Q -> sram/A_BM[4] : -0.157604
+[hold reg-reg] m._278_/Q -> sram/A_BM[2] : -0.157495
+[hold reg-reg] m._278_/Q -> sram/A_DIN[5] : -0.154800
+[hold reg-reg] m._278_/Q -> sram/A_BM[6] : -0.154018
+[hold reg-reg] m.u_pool1._537_/Q -> sram/A_WEN : -0.114103
+[hold reg-reg] m.u_pool1._536_/Q -> m.u_pool1._534_/D : -0.024104
+[hold reg-reg] m.u_pool2._406_/Q -> m.u_pool2._404_/D : -0.024104
+[hold reg-reg] m.u_conv1.u_loader._929_/Q -> m.u_conv1.u_loader._933_/D : -0.016023
+[hold reg-reg] m.u_conv2.u_loader._929_/Q -> m.u_conv2.u_loader._933_/D : -0.016023
+[hold reg-reg] m.u_conv3._584_/Q -> m.u_conv3._583_/D : -0.006995
+[hold reg-reg] m.u_pool2._408_/Q -> m.u_pool2._403_/D : -0.004588
+[hold reg-reg] m.u_pool1._538_/Q -> m.u_pool1._533_/D : -0.003258

@@ -1,0 +1,11 @@
+
+===========================================================================
+Violator List
+============================================================================
+[hold reg-reg] m.u_mnist_loader._72_/Q -> sram/A_ADDR[1] : -0.319348
+[hold reg-reg] m.u_mnist_loader._75_/Q -> sram/A_ADDR[4] : -0.307862
+[hold reg-reg] m.u_mnist_loader._71_/Q -> sram/A_ADDR[0] : -0.275862
+[hold reg-reg] m.u_mnist_loader._74_/Q -> sram/A_ADDR[3] : -0.255717
+[hold reg-reg] m.u_mnist_loader._73_/Q -> sram/A_ADDR[2] : -0.254786
+[hold reg-reg] m.u_pool2._406_/Q -> sram/A_ADDR[7] : -0.121430
+[hold reg-reg] m.u_pool2._406_/Q -> sram/A_ADDR[6] : -0.063088

@@ -1,0 +1,9 @@
+`verilator_config
+lint_off -rule DECLFILENAME
+lint_off -rule EOFNEWLINE
+lint_off -rule UNDRIVEN -file "/home/marc-andre/binaryneuralnet-asic-TTIHP26/runs/wokwi/tmp/016e634147a1488194de01ee87453472.bb.v"
+lint_off -rule UNUSEDSIGNAL -file "/home/marc-andre/binaryneuralnet-asic-TTIHP26/runs/wokwi/tmp/016e634147a1488194de01ee87453472.bb.v"
+lint_off -rule UNDRIVEN -file "/home/marc-andre/binaryneuralnet-asic-TTIHP26/runs/wokwi/tmp/aa2c1e52df39480dbde75d220820e36b.bb.v"
+lint_off -rule UNUSEDSIGNAL -file "/home/marc-andre/binaryneuralnet-asic-TTIHP26/runs/wokwi/tmp/aa2c1e52df39480dbde75d220820e36b.bb.v"
+lint_off -rule UNDRIVEN -file "/home/marc-andre/binaryneuralnet-asic-TTIHP26/runs/wokwi/tmp/f76ecb46469b49f7b83827ad5eb90e77.bb.v"
+lint_off -rule UNUSEDSIGNAL -file "/home/marc-andre/binaryneuralnet-asic-TTIHP26/runs/wokwi/tmp/f76ecb46469b49f7b83827ad5eb90e77.bb.v"
