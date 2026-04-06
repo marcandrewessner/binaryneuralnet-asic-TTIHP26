@@ -1,7 +1,10 @@
 .DS_Store
 .idea
+
 runs
-tt/
+/tt/
+/ttsetup/
+
 tt_submission
 src/user_config.json
 src/config_merged.json
