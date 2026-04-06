@@ -1,1 +1,0 @@
-magic -dnull -noconsole -rcfile /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/ttsetup/pdk/ciel/ihp-sg13g2/versions/c4b8b4e5e7a05f375cca3815d51b3a37721fbf5c/ihp-sg13g2/libs.tech/magic/ihp-sg13g2.magicrc /nix/store/nxfh9ig6whzb1djifv7z8km0rkvp0kxl-python3-3.13.9-env/lib/python3.13/site-packages/librelane/scripts/magic/wrapper.tcl
