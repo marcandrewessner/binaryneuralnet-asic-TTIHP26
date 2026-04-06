@@ -1,0 +1,9 @@
+`verilator_config
+lint_off -rule DECLFILENAME
+lint_off -rule EOFNEWLINE
+lint_off -rule UNDRIVEN -file "/Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/runs/wokwi/tmp/e69a6ed1166f40cba29943101776b0d3.bb.v"
+lint_off -rule UNUSEDSIGNAL -file "/Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/runs/wokwi/tmp/e69a6ed1166f40cba29943101776b0d3.bb.v"
+lint_off -rule UNDRIVEN -file "/Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/runs/wokwi/tmp/158ec990eb7f4229b93a95b533169fe1.bb.v"
+lint_off -rule UNUSEDSIGNAL -file "/Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/runs/wokwi/tmp/158ec990eb7f4229b93a95b533169fe1.bb.v"
+lint_off -rule UNDRIVEN -file "/Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/runs/wokwi/tmp/9af32dcf1d9d4ad7ad87ddf1436f0378.bb.v"
+lint_off -rule UNUSEDSIGNAL -file "/Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/runs/wokwi/tmp/9af32dcf1d9d4ad7ad87ddf1436f0378.bb.v"

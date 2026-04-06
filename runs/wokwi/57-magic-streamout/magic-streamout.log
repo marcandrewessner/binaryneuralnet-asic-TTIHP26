@@ -1,0 +1,579 @@
+
+Magic 8.3 revision 616 - Compiled on Mon Mar  9 08:25:20 UTC 2026.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+WARNING: RLIMIT_NOFILE is above 1024 and Tcl_Version<9 this may cause runtime issues [rlim_cur=1048576]
+Using NULL graphics device.
+Processing system .magicrc file
+Switching to WIRING tool.
+Switching to NETLIST tool.
+Switching to PICK tool.
+Switching to BOX tool.
+Sourcing design .magicrc for technology ihp-sg13g2 ...
+2 Magic internal units = 1 Lambda
+Input style sg13g2(): scaleFactor=2, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    pblock sealcont difffill nemitter hvnemitter hvisodiffres sealvia1 sealvia2 sealvia3 sealvia4 sealvia5 sealvia6 pillar solder seal glass thruvia inductor 
+Scaled tech values by 2 / 1 to match internal grid scaling
+Loading ihp-sg13g2 Device Generator Menu ...
+Loading "/nix/store/nxfh9ig6whzb1djifv7z8km0rkvp0kxl-python3-3.13.9-env/lib/python3.13/site-packages/librelane/scripts/magic/wrapper.tcl" from command line.
+> gds read /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/ttsetup/pdk/ciel/ihp-sg13g2/versions/c4b8b4e5e7a05f375cca3815d51b3a37721fbf5c/ihp-sg13g2/libs.ref/sg13g2_stdcell/gds/sg13g2_stdcell.gds
+Warning: Calma reading is not undoable!  I hope that's OK.
+Library written using GDS-II Release 5.0
+Library name: sg13g2_stdcell
+Reading "sg13g2_a21o_1".
+Reading "sg13g2_a21o_2".
+Reading "sg13g2_a21oi_1".
+CIF file read warning: CIF style sg13g2(): units rescaled by factor of 5 / 1
+Reading "sg13g2_a21oi_2".
+Reading "sg13g2_a221oi_1".
+Reading "sg13g2_a22oi_1".
+Reading "sg13g2_and2_1".
+Reading "sg13g2_and2_2".
+Reading "sg13g2_and3_1".
+Reading "sg13g2_and3_2".
+Reading "sg13g2_and4_1".
+Reading "sg13g2_and4_2".
+Reading "sg13g2_antennanp".
+Reading "sg13g2_buf_1".
+Reading "sg13g2_buf_16".
+Reading "sg13g2_buf_2".
+Reading "sg13g2_buf_4".
+Reading "sg13g2_buf_8".
+Reading "sg13g2_decap_4".
+Reading "sg13g2_decap_8".
+Reading "sg13g2_dfrbp_1".
+Reading "sg13g2_dfrbp_2".
+Reading "sg13g2_dfrbpq_1".
+Reading "sg13g2_dfrbpq_2".
+Reading "sg13g2_dlhq_1".
+Reading "sg13g2_dlhr_1".
+Reading "sg13g2_dlhrq_1".
+Reading "sg13g2_dllr_1".
+Reading "sg13g2_dllrq_1".
+Reading "sg13g2_dlygate4sd1_1".
+Reading "sg13g2_dlygate4sd2_1".
+Reading "sg13g2_dlygate4sd3_1".
+Reading "sg13g2_ebufn_2".
+Reading "sg13g2_ebufn_4".
+Reading "sg13g2_ebufn_8".
+Reading "sg13g2_einvn_2".
+Reading "sg13g2_einvn_4".
+Reading "sg13g2_einvn_8".
+Reading "sg13g2_fill_1".
+Reading "sg13g2_fill_2".
+Reading "sg13g2_fill_4".
+Reading "sg13g2_fill_8".
+Reading "sg13g2_inv_1".
+Reading "sg13g2_inv_16".
+Reading "sg13g2_inv_2".
+Reading "sg13g2_inv_4".
+Reading "sg13g2_inv_8".
+Reading "sg13g2_lgcp_1".
+Reading "sg13g2_mux2_1".
+Reading "sg13g2_mux2_2".
+Reading "sg13g2_mux4_1".
+Reading "sg13g2_nand2_1".
+Reading "sg13g2_nand2_2".
+Reading "sg13g2_nand2b_1".
+Reading "sg13g2_nand2b_2".
+Reading "sg13g2_nand3_1".
+Reading "sg13g2_nand3b_1".
+Reading "sg13g2_nand4_1".
+Reading "sg13g2_nor2_1".
+Reading "sg13g2_nor2_2".
+Reading "sg13g2_nor2b_1".
+Reading "sg13g2_nor2b_2".
+Reading "sg13g2_nor3_1".
+Reading "sg13g2_nor3_2".
+Reading "sg13g2_nor4_1".
+Reading "sg13g2_nor4_2".
+Reading "sg13g2_o21ai_1".
+Reading "sg13g2_or2_1".
+Reading "sg13g2_or2_2".
+Reading "sg13g2_or3_1".
+Reading "sg13g2_or3_2".
+Reading "sg13g2_or4_1".
+Reading "sg13g2_or4_2".
+Reading "sg13g2_sdfbbp_1".
+Reading "sg13g2_sdfrbp_1".
+Reading "sg13g2_sdfrbp_2".
+Reading "sg13g2_sdfrbpq_1".
+Reading "sg13g2_sdfrbpq_2".
+Reading "sg13g2_sighold".
+Reading "sg13g2_slgcp_1".
+Reading "sg13g2_tiehi".
+Reading "sg13g2_tielo".
+Reading "sg13g2_xnor2_1".
+Reading "sg13g2_xor2_1".
+> lef read /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/ttsetup/pdk/ciel/ihp-sg13g2/versions/c4b8b4e5e7a05f375cca3815d51b3a37721fbf5c/ihp-sg13g2/libs.ref/sg13g2_stdcell/lef/sg13g2_stdcell.lef
+Reading LEF data from file /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/ttsetup/pdk/ciel/ihp-sg13g2/versions/c4b8b4e5e7a05f375cca3815d51b3a37721fbf5c/ihp-sg13g2/libs.ref/sg13g2_stdcell/lef/sg13g2_stdcell.lef.
+This action cannot be undone.
+LEF read, Line 6473 (Message): Unknown keyword "ANTENNAMAXCUTCAR" in LEF file; ignoring.
+LEF read: Processed 7927 lines.
+> gds read /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+Warning: Calma reading is not undoable!  I hope that's OK.
+Library written using GDS-II Release 6.0
+Library name: LIB
+Reading "VIA_M1_Activ_db_0x02835b9b".
+Reading "M1_GatPoly_CDNS_7564810655944".
+Saving contents of cell M1_GatPoly_CDNS_7564810655944
+Reading "RM_IHPSG13_1P_BITKIT_CELL_SUB".
+Reading "lvsres_db_0x02834b9a".
+Reading "lvsres_db_0x0283509a".
+Reading "RM_IHPSG13_1P_BITKIT_CELL".
+Reading "RM_IHPSG13_1P_BITKIT_CELL_2x1".
+Reading "RM_IHPSG13_1P_BITKIT_TAP".
+Reading "RM_IHPSG13_1P_BITKIT_16x2_EDGE_TB".
+Reading "RM_IHPSG13_1P_BITKIT_16x2_SRAM".
+Reading "viagen34_CDNS_7564810655945".
+Saving contents of cell viagen34_CDNS_7564810655945
+Reading "RM_IHPSG13_1P_BITKIT_CELL_CORNER".
+Reading "RM_IHPSG13_1P_BITKIT_EDGE_LR".
+Reading "viagen23_CDNS_7564810655943".
+Saving contents of cell viagen23_CDNS_7564810655943
+Reading "lvsres_db_0x0400b71a".
+Reading "RSC_IHPSG13_NAND2X2".
+Reading "RSC_IHPSG13_NOR3X2".
+Reading "RSC_IHPSG13_LHPQX2".
+Reading "M3_M2_CDNS_7564810655942".
+Saving contents of cell M3_M2_CDNS_7564810655942
+Reading "lvsres_db_0x04007e9a".
+Reading "RSC_IHPSG13_NAND3X2".
+Reading "RSC_IHPSG13_INVX4".
+Reading "RSC_IHPSG13_INVX2".
+Reading "viagen12_CDNS_7564810655941".
+Saving contents of cell viagen12_CDNS_7564810655941
+Reading "viagen23_CDNS_7564810655940".
+Saving contents of cell viagen23_CDNS_7564810655940
+Reading "viagen12_CDNS_7564810655939".
+Saving contents of cell viagen12_CDNS_7564810655939
+Reading "viagen12_CDNS_7564810655938".
+Saving contents of cell viagen12_CDNS_7564810655938
+Reading "viagen23_CDNS_7564810655937".
+Saving contents of cell viagen23_CDNS_7564810655937
+Reading "viagen23_CDNS_7564810655936".
+Saving contents of cell viagen23_CDNS_7564810655936
+Reading "M2_M1_CDNS_7564810655935".
+Saving contents of cell M2_M1_CDNS_7564810655935
+Reading "viagen12_CDNS_7564810655934".
+Saving contents of cell viagen12_CDNS_7564810655934
+Reading "viagen12_CDNS_7564810655933".
+Saving contents of cell viagen12_CDNS_7564810655933
+Reading "viagen23_CDNS_7564810655932".
+Saving contents of cell viagen23_CDNS_7564810655932
+Reading "RSC_IHPSG13_DFPQD_MSAFFX2N_half".
+Reading "RSC_IHPSG13_FILLCAP8".
+Reading "M3_M2_CDNS_7564810655916".
+Saving contents of cell M3_M2_CDNS_7564810655916
+Reading "RSC_IHPSG13_FILL1".
+Reading "RSC_IHPSG13_FILL2".
+Reading "RSC_IHPSG13_CINVX2".
+Reading "M3_M2_CDNS_756481065599".
+Saving contents of cell M3_M2_CDNS_756481065599
+Reading "viagen34_CDNS_756481065598".
+Saving contents of cell viagen34_CDNS_756481065598
+Reading "viagen34_CDNS_756481065597".
+Saving contents of cell viagen34_CDNS_756481065597
+Reading "viagen23_CDNS_756481065594".
+Saving contents of cell viagen23_CDNS_756481065594
+Reading "M2_M1_CDNS_756481065593".
+Saving contents of cell M2_M1_CDNS_756481065593
+Reading "RSC_IHPSG13_FILLCAP4".
+Reading "M2_M1_CDNS_756481065590".
+Saving contents of cell M2_M1_CDNS_756481065590
+Reading "RM_IHPSG13_1P_COLUMN_32".
+Reading "RM_IHPSG13_1P_BITKIT_16x2_CORNER".
+Reading "RM_IHPSG13_1P_BITKIT_16x2_LE_con_corner".
+Reading "RM_IHPSG13_1P_BITKIT_16x2_POWER_ramblk".
+Reading "RM_IHPSG13_1P_BITKIT_16x2_EDGE_LR".
+Reading "RM_IHPSG13_1P_BITKIT_16x2_LE_con_edge_lr".
+Reading "RM_IHPSG13_1P_ROWREG0".
+Reading "RM_IHPSG13_1P_DEC00".
+Reading "RM_IHPSG13_1P_DEC04".
+Reading "RM_IHPSG13_1P_DEC_LE_l1empty".
+Reading "RM_IHPSG13_1P_DEC01".
+Reading "RM_IHPSG13_1P_DEC_LE_l0wire".
+Reading "RM_IHPSG13_1P_DEC_LE_l2empty".
+Reading "RM_IHPSG13_1P_DEC_LE_tap".
+Reading "RM_IHPSG13_1P_ROWDEC0".
+Reading "RSC_IHPSG13_CDLYX1_DUMMY".
+Reading "lvsres_db_0x0283151a".
+Reading "RSC_IHPSG13_CBUFX2".
+Reading "RSC_IHPSG13_TIEH".
+Reading "RM_IHPSG13_1P_BLDRV".
+Reading "RSC_IHPSG13_CINVX4_WN".
+Reading "RSC_IHPSG13_NOR2X2".
+Reading "RSC_IHPSG13_DFPQD_MSAFFX2N".
+Reading "RSC_IHPSG13_DFNQMX2IX1".
+Reading "viagen12_CDNS_7564810655931".
+Saving contents of cell viagen12_CDNS_7564810655931
+Reading "viagen12_CDNS_7564810655930".
+Saving contents of cell viagen12_CDNS_7564810655930
+Reading "M3_M2_CDNS_7564810655929".
+Saving contents of cell M3_M2_CDNS_7564810655929
+Reading "viagen34_CDNS_7564810655928".
+Saving contents of cell viagen34_CDNS_7564810655928
+Reading "viagen23_CDNS_7564810655927".
+Saving contents of cell viagen23_CDNS_7564810655927
+Reading "M3_M2_CDNS_7564810655926".
+Saving contents of cell M3_M2_CDNS_7564810655926
+Reading "viagen34_CDNS_7564810655925".
+Saving contents of cell viagen34_CDNS_7564810655925
+Reading "M3_M2_CDNS_7564810655924".
+Saving contents of cell M3_M2_CDNS_7564810655924
+Reading "viagen23_CDNS_7564810655923".
+Saving contents of cell viagen23_CDNS_7564810655923
+Reading "M2_M1_CDNS_7564810655922".
+Saving contents of cell M2_M1_CDNS_7564810655922
+Reading "M2_M1_CDNS_7564810655921".
+Saving contents of cell M2_M1_CDNS_7564810655921
+Reading "RSC_IHPSG13_WLDRVX4".
+Reading "viagen12_CDNS_7564810655920".
+Saving contents of cell viagen12_CDNS_7564810655920
+Reading "M2_M1_CDNS_7564810655919".
+Saving contents of cell M2_M1_CDNS_7564810655919
+Reading "M3_M2_CDNS_7564810655918".
+Saving contents of cell M3_M2_CDNS_7564810655918
+Reading "M3_M2_CDNS_7564810655917".
+Saving contents of cell M3_M2_CDNS_7564810655917
+Reading "RSC_IHPSG13_CBUFX4".
+Reading "M3_M2_CDNS_7564810655915".
+Saving contents of cell M3_M2_CDNS_7564810655915
+Reading "viagen23_CDNS_7564810655914".
+Saving contents of cell viagen23_CDNS_7564810655914
+Reading "M3_M2_CDNS_7564810655913".
+Saving contents of cell M3_M2_CDNS_7564810655913
+Reading "M3_M2_CDNS_7564810655912".
+Saving contents of cell M3_M2_CDNS_7564810655912
+Reading "RSC_IHPSG13_CDLYX1".
+Reading "RSC_IHPSG13_MX2IX1".
+Reading "RSC_IHPSG13_AND2X2".
+Reading "RSC_IHPSG13_CBUFX8".
+Reading "RSC_IHPSG13_TIEL".
+Reading "RSC_IHPSG13_OA12X1".
+Reading "RSC_IHPSG13_CNAND2X2".
+Reading "RSC_IHPSG13_DFNQX2".
+Reading "RSC_IHPSG13_XOR2X2".
+Reading "RSC_IHPSG13_CINVX4".
+Reading "RSC_IHPSG13_CGATEPX4".
+Reading "RSC_IHPSG13_MX2X2".
+Reading "RSC_IHPSG13_CDLYX2".
+Reading "RSC_IHPSG13_CINVX8".
+Reading "viagen12_CDNS_7564810655911".
+Saving contents of cell viagen12_CDNS_7564810655911
+Reading "viagen12_CDNS_7564810655910".
+Saving contents of cell viagen12_CDNS_7564810655910
+Reading "M3_M2_CDNS_756481065596".
+Saving contents of cell M3_M2_CDNS_756481065596
+Reading "M2_M1_CDNS_756481065595".
+Saving contents of cell M2_M1_CDNS_756481065595
+Reading "M3_M2_CDNS_756481065592".
+Saving contents of cell M3_M2_CDNS_756481065592
+Reading "viagen23_CDNS_756481065591".
+Saving contents of cell viagen23_CDNS_756481065591
+Reading "RM_IHPSG13_1P_MATRIX_32x32".
+Reading "RM_IHPSG13_1P_ROWREG5".
+Reading "RM_IHPSG13_1P_ROWDEC5".
+Reading "RM_IHPSG13_1P_DLY_0".
+Reading "RM_IHPSG13_1P_DLY_1".
+Reading "RM_IHPSG13_1P_COLDEC3".
+Reading "RM_IHPSG13_1P_COLCTRL3".
+Error while reading cell "RM_IHPSG13_1P_COLCTRL3" (byte position 293698): Warning: cell "RSC_IHPSG13_FILL1" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "RM_IHPSG13_1P_COLCTRL3" (byte position 295774): Warning: cell "M2_M1_CDNS_7564810655922" placed on top of itself.  Ignoring the extra one.
+Reading "RM_IHPSG13_1P_COLCTRL3_end".
+Reading "RM_IHPSG13_1P_WLDRV16X4_tap".
+Reading "RM_IHPSG13_1P_WLDRV16X4".
+Reading "RM_IHPSG13_1P_COLDRV13_FILL1".
+Reading "RM_IHPSG13_1P_COLDRV13X4".
+Reading "RM_IHPSG13_1P_DLY_MUX".
+Reading "RM_IHPSG13_1P_CTRL".
+Reading "RM_IHPSG13_1P_COLDRV13_FILL4".
+Reading "RM_IHPSG13_1P_256x8_c3_bm_bist".
+> lef read /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.lef
+Reading LEF data from file /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.lef.
+This action cannot be undone.
+LEF read, Line 1004 (Message): Unknown keyword "ANTENNAMAXCUTCAR" in LEF file; ignoring.
+LEF read: Processed 1670 lines.
+> gds read /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/ttsetup/pdk/ciel/ihp-sg13g2/versions/c4b8b4e5e7a05f375cca3815d51b3a37721fbf5c/ihp-sg13g2/libs.ref/sg13g2_io/gds/sg13g2_io.gds
+Warning: Calma reading is not undoable!  I hope that's OK.
+Library written using GDS-II Release 5.0
+Library name: sg13g2_io
+Reading "sg13g2_Clamp_N43N43D4R".
+Reading "sg13g2_RCClampResistor".
+Reading "sg13g2_RCClampInverter".
+Reading "sg13g2_IOPadVdd".
+Reading "sg13g2_IOPadIOVdd".
+Reading "sg13g2_Filler4000".
+Reading "sg13g2_DCNDiode".
+Reading "sg13g2_DCPDiode".
+Reading "sg13g2_IOPadIOVss".
+Reading "sg13g2_IOPadVss".
+Reading "sg13g2_SecondaryProtection".
+Reading "sg13g2_LevelDown".
+Reading "sg13g2_IOPadIn".
+Reading "sg13g2_io_inv_x1".
+Reading "sg13g2_LevelUp".
+Reading "sg13g2_io_nor2_x1".
+Reading "sg13g2_io_tie".
+Reading "sg13g2_io_nand2_x1".
+Reading "sg13g2_GateDecode".
+Reading "sg13g2_Clamp_N2N2D".
+Reading "sg13g2_Clamp_P2N2D".
+Reading "sg13g2_IOPadInOut4mA".
+Reading "sg13g2_Clamp_P15N15D".
+Reading "sg13g2_Clamp_N15N15D".
+Reading "sg13g2_IOPadInOut30mA".
+Reading "sg13g2_LevelUpInv".
+Reading "sg13g2_GateLevelUpInv".
+Reading "sg13g2_IOPadOut4mA".
+Reading "sg13g2_IOPadOut30mA".
+Reading "sg13g2_Clamp_N8N8D".
+Reading "sg13g2_Clamp_P8N8D".
+Reading "sg13g2_IOPadInOut16mA".
+Reading "sg13g2_IOPadOut16mA".
+Reading "sg13g2_IOPadTriOut4mA".
+Reading "sg13g2_IOPadTriOut16mA".
+Reading "sg13g2_IOPadTriOut30mA".
+Reading "sg13g2_Corner".
+Reading "sg13g2_Filler200".
+Reading "sg13g2_Filler400".
+Reading "sg13g2_Filler1000".
+Reading "sg13g2_Filler2000".
+Reading "sg13g2_Filler10000".
+Reading "sg13g2_Clamp_N20N0D".
+Reading "sg13g2_Clamp_P20N0D".
+Reading "sg13g2_IOPadAnalog".
+Reading "sg12g2_Gallery".
+> lef read /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/ttsetup/pdk/ciel/ihp-sg13g2/versions/c4b8b4e5e7a05f375cca3815d51b3a37721fbf5c/ihp-sg13g2/libs.ref/sg13g2_io/lef/sg13g2_io.lef
+Reading LEF data from file /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/ttsetup/pdk/ciel/ihp-sg13g2/versions/c4b8b4e5e7a05f375cca3815d51b3a37721fbf5c/ihp-sg13g2/libs.ref/sg13g2_io/lef/sg13g2_io.lef.
+This action cannot be undone.
+LEF read: Processed 4552 lines.
+Cell (NEWCELL) couldn't be read
+No such file or directory
+Creating new cell
+> lef read /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/ttsetup/pdk/ciel/ihp-sg13g2/versions/c4b8b4e5e7a05f375cca3815d51b3a37721fbf5c/ihp-sg13g2/libs.ref/sg13g2_stdcell/lef/sg13g2_tech.lef
+Reading LEF data from file /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/ttsetup/pdk/ciel/ihp-sg13g2/versions/c4b8b4e5e7a05f375cca3815d51b3a37721fbf5c/ihp-sg13g2/libs.ref/sg13g2_stdcell/lef/sg13g2_tech.lef.
+This action cannot be undone.
+LEF read, Line 79 (Message): Unknown keyword "MAXIMUMDENSITY" in LEF file; ignoring.
+LEF read, Line 80 (Message): Unknown keyword "DENSITYCHECKSTEP" in LEF file; ignoring.
+LEF read, Line 81 (Message): Unknown keyword "DENSITYCHECKWINDOW" in LEF file; ignoring.
+LEF read, Line 87 (Message): Unknown keyword "MINIMUMCUT" in LEF file; ignoring.
+LEF read, Line 91 (Message): Unknown keyword "ANTENNACUMAREARATIO" in LEF file; ignoring.
+LEF read, Line 92 (Message): Unknown keyword "ANTENNACUMDIFFAREARATIO" in LEF file; ignoring.
+LEF read, Line 121 (Message): Unknown keyword "MAXIMUMDENSITY" in LEF file; ignoring.
+LEF read, Line 122 (Message): Unknown keyword "DENSITYCHECKSTEP" in LEF file; ignoring.
+LEF read, Line 123 (Message): Unknown keyword "DENSITYCHECKWINDOW" in LEF file; ignoring.
+LEF read, Line 129 (Message): Unknown keyword "MINIMUMCUT" in LEF file; ignoring.
+LEF read, Line 134 (Message): Unknown keyword "ANTENNACUMAREARATIO" in LEF file; ignoring.
+LEF read, Line 135 (Message): Unknown keyword "ANTENNACUMDIFFAREARATIO" in LEF file; ignoring.
+LEF read, Line 163 (Message): Unknown keyword "MAXIMUMDENSITY" in LEF file; ignoring.
+LEF read, Line 164 (Message): Unknown keyword "DENSITYCHECKSTEP" in LEF file; ignoring.
+LEF read, Line 165 (Message): Unknown keyword "DENSITYCHECKWINDOW" in LEF file; ignoring.
+LEF read, Line 171 (Message): Unknown keyword "MINIMUMCUT" in LEF file; ignoring.
+LEF read, Line 176 (Message): Unknown keyword "ANTENNACUMAREARATIO" in LEF file; ignoring.
+LEF read, Line 177 (Message): Unknown keyword "ANTENNACUMDIFFAREARATIO" in LEF file; ignoring.
+LEF read, Line 205 (Message): Unknown keyword "MAXIMUMDENSITY" in LEF file; ignoring.
+LEF read, Line 206 (Message): Unknown keyword "DENSITYCHECKSTEP" in LEF file; ignoring.
+LEF read, Line 207 (Message): Unknown keyword "DENSITYCHECKWINDOW" in LEF file; ignoring.
+LEF read, Line 213 (Message): Unknown keyword "MINIMUMCUT" in LEF file; ignoring.
+LEF read, Line 218 (Message): Unknown keyword "ANTENNACUMAREARATIO" in LEF file; ignoring.
+LEF read, Line 219 (Message): Unknown keyword "ANTENNACUMDIFFAREARATIO" in LEF file; ignoring.
+LEF read, Line 246 (Message): Unknown keyword "MAXIMUMDENSITY" in LEF file; ignoring.
+LEF read, Line 247 (Message): Unknown keyword "DENSITYCHECKSTEP" in LEF file; ignoring.
+LEF read, Line 248 (Message): Unknown keyword "DENSITYCHECKWINDOW" in LEF file; ignoring.
+LEF read, Line 254 (Message): Unknown keyword "MINIMUMCUT" in LEF file; ignoring.
+LEF read, Line 259 (Message): Unknown keyword "ANTENNACUMAREARATIO" in LEF file; ignoring.
+LEF read, Line 260 (Message): Unknown keyword "ANTENNACUMDIFFAREARATIO" in LEF file; ignoring.
+LEF read, Line 286 (Message): Unknown keyword "MAXIMUMDENSITY" in LEF file; ignoring.
+LEF read, Line 287 (Message): Unknown keyword "DENSITYCHECKSTEP" in LEF file; ignoring.
+LEF read, Line 288 (Message): Unknown keyword "DENSITYCHECKWINDOW" in LEF file; ignoring.
+LEF read, Line 293 (Message): Unknown keyword "ANTENNACUMAREARATIO" in LEF file; ignoring.
+LEF read, Line 294 (Message): Unknown keyword "ANTENNACUMDIFFAREARATIO" in LEF file; ignoring.
+LEF read, Line 320 (Message): Unknown keyword "MAXIMUMDENSITY" in LEF file; ignoring.
+LEF read, Line 321 (Message): Unknown keyword "DENSITYCHECKSTEP" in LEF file; ignoring.
+LEF read, Line 322 (Message): Unknown keyword "DENSITYCHECKWINDOW" in LEF file; ignoring.
+LEF read, Line 327 (Message): Unknown keyword "ANTENNACUMAREARATIO" in LEF file; ignoring.
+LEF read, Line 328 (Message): Unknown keyword "ANTENNACUMDIFFAREARATIO" in LEF file; ignoring.
+LEF read: Processed 1197 lines.
+> def read /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/runs/wokwi/53-odb-cellfrequencytables/tt_um_maw_mnistbnn.def -noblockage
+Reading DEF data from file /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/runs/wokwi/53-odb-cellfrequencytables/tt_um_maw_mnistbnn.def.
+This action cannot be undone.
+  Processed 7 vias total.
+  Processed 2 non-default rules total.
+  Processed 83135 subcell instances total.
+  Processed 45 pins total.
+  Processed 2 special nets total.
+  Processed 25625 nets total.
+DEF read: Processed 559825 lines.
+   Copying output for cell sg13g2_decap_8 from $PDKPATH/libs.ref/sg13g2_stdcell/gds/sg13g2_stdcell.gds
+   Copying output for cell sg13g2_decap_4 from $PDKPATH/libs.ref/sg13g2_stdcell/gds/sg13g2_stdcell.gds
+   Copying output for cell M3_M2_CDNS_7564810655913 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell M2_M1_CDNS_756481065593 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell M3_M2_CDNS_7564810655915 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell M3_M2_CDNS_7564810655912 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell viagen23_CDNS_7564810655914 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell viagen23_CDNS_756481065591 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell M2_M1_CDNS_756481065590 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell RSC_IHPSG13_CBUFX4 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell RSC_IHPSG13_FILL1 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell RM_IHPSG13_1P_COLDRV13X4 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell M3_M2_CDNS_7564810655916 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell viagen23_CDNS_756481065594 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell M3_M2_CDNS_7564810655918 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell viagen12_CDNS_7564810655920 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell viagen34_CDNS_756481065597 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell M3_M2_CDNS_7564810655917 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell M2_M1_CDNS_7564810655919 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell RSC_IHPSG13_WLDRVX4 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell RM_IHPSG13_1P_WLDRV16X4 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell RM_IHPSG13_1P_WLDRV16X4_tap from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell RM_IHPSG13_1P_COLCTRL3_end from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell viagen34_CDNS_7564810655925 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell viagen34_CDNS_7564810655928 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell M2_M1_CDNS_7564810655921 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell RSC_IHPSG13_INVX2 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell RSC_IHPSG13_CINVX2 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell viagen23_CDNS_7564810655927 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell M3_M2_CDNS_7564810655929 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell RSC_IHPSG13_FILLCAP8 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell RSC_IHPSG13_CBUFX2 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell RSC_IHPSG13_TIEH from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell RSC_IHPSG13_DFNQMX2IX1 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell M2_M1_CDNS_7564810655922 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell RSC_IHPSG13_AND2X2 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell RSC_IHPSG13_DFPQD_MSAFFX2N_half from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell RSC_IHPSG13_DFPQD_MSAFFX2N from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell RSC_IHPSG13_INVX4 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell RSC_IHPSG13_FILLCAP4 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell lvsres_db_0x0283151a from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell viagen12_CDNS_7564810655930 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell RSC_IHPSG13_CINVX4_WN from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell viagen12_CDNS_7564810655931 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell RSC_IHPSG13_NOR2X2 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell viagen23_CDNS_7564810655923 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell M3_M2_CDNS_7564810655926 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell M3_M2_CDNS_7564810655924 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell viagen23_CDNS_7564810655932 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell viagen12_CDNS_7564810655933 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell viagen12_CDNS_7564810655941 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell M2_M1_CDNS_7564810655935 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell viagen23_CDNS_7564810655937 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell viagen23_CDNS_7564810655936 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell viagen12_CDNS_7564810655938 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell viagen12_CDNS_7564810655934 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell viagen12_CDNS_7564810655939 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell viagen23_CDNS_7564810655940 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell RM_IHPSG13_1P_BLDRV from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell RM_IHPSG13_1P_COLCTRL3 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell RM_IHPSG13_1P_BITKIT_16x2_LE_con_edge_lr from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell VIA_M1_Activ_db_0x02835b9b from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell RM_IHPSG13_1P_BITKIT_CELL_CORNER from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell M1_GatPoly_CDNS_7564810655944 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell RM_IHPSG13_1P_BITKIT_EDGE_LR from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell RM_IHPSG13_1P_BITKIT_16x2_EDGE_LR from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell RM_IHPSG13_1P_BITKIT_16x2_LE_con_corner from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell RM_IHPSG13_1P_BITKIT_16x2_CORNER from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell viagen34_CDNS_7564810655945 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell RM_IHPSG13_1P_BITKIT_16x2_POWER_ramblk from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell RM_IHPSG13_1P_BITKIT_16x2_EDGE_TB from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell RM_IHPSG13_1P_BITKIT_TAP from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell RM_IHPSG13_1P_BITKIT_CELL_SUB from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell lvsres_db_0x02834b9a from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell lvsres_db_0x0283509a from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell RM_IHPSG13_1P_BITKIT_CELL from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell RM_IHPSG13_1P_BITKIT_CELL_2x1 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell RM_IHPSG13_1P_BITKIT_16x2_SRAM from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell RM_IHPSG13_1P_COLUMN_32 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell RM_IHPSG13_1P_MATRIX_32x32 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell RSC_IHPSG13_TIEL from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell M2_M1_CDNS_756481065595 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell viagen12_CDNS_7564810655910 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell RSC_IHPSG13_CINVX8 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell viagen12_CDNS_7564810655911 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell RSC_IHPSG13_CINVX4 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell RSC_IHPSG13_CBUFX8 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell RSC_IHPSG13_DFNQX2 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell RSC_IHPSG13_CGATEPX4 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell RSC_IHPSG13_CDLYX2 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell RSC_IHPSG13_MX2X2 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell RSC_IHPSG13_CNAND2X2 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell RSC_IHPSG13_XOR2X2 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell RSC_IHPSG13_FILL2 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell M3_M2_CDNS_756481065596 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell RSC_IHPSG13_OA12X1 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell M3_M2_CDNS_756481065599 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell viagen34_CDNS_756481065598 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell RM_IHPSG13_1P_CTRL from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell RSC_IHPSG13_CDLYX1 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell RSC_IHPSG13_MX2IX1 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell RM_IHPSG13_1P_DLY_MUX from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell RSC_IHPSG13_NAND3X2 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell RM_IHPSG13_1P_COLDEC3 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell lvsres_db_0x04007e9a from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell RSC_IHPSG13_CDLYX1_DUMMY from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell RM_IHPSG13_1P_DLY_1 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell RM_IHPSG13_1P_DLY_0 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell viagen23_CDNS_7564810655943 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell M3_M2_CDNS_7564810655942 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell RM_IHPSG13_1P_ROWREG0 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell RM_IHPSG13_1P_ROWREG5 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell RM_IHPSG13_1P_DEC00 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell RM_IHPSG13_1P_DEC_LE_l0wire from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell RM_IHPSG13_1P_DEC01 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell RM_IHPSG13_1P_DEC_LE_tap from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell RSC_IHPSG13_NAND2X2 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell RSC_IHPSG13_LHPQX2 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell RSC_IHPSG13_NOR3X2 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell lvsres_db_0x0400b71a from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell RM_IHPSG13_1P_DEC04 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell RM_IHPSG13_1P_DEC_LE_l2empty from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell RM_IHPSG13_1P_DEC_LE_l1empty from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell RM_IHPSG13_1P_ROWDEC0 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell RM_IHPSG13_1P_ROWDEC5 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell M3_M2_CDNS_756481065592 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell RM_IHPSG13_1P_COLDRV13_FILL4 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell RM_IHPSG13_1P_COLDRV13_FILL1 from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell RM_IHPSG13_1P_256x8_c3_bm_bist from /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds
+   Copying output for cell sg13g2_dfrbpq_1 from $PDKPATH/libs.ref/sg13g2_stdcell/gds/sg13g2_stdcell.gds
+   Copying output for cell sg13g2_fill_2 from $PDKPATH/libs.ref/sg13g2_stdcell/gds/sg13g2_stdcell.gds
+   Copying output for cell sg13g2_dlygate4sd3_1 from $PDKPATH/libs.ref/sg13g2_stdcell/gds/sg13g2_stdcell.gds
+   Copying output for cell sg13g2_o21ai_1 from $PDKPATH/libs.ref/sg13g2_stdcell/gds/sg13g2_stdcell.gds
+   Copying output for cell sg13g2_tielo from $PDKPATH/libs.ref/sg13g2_stdcell/gds/sg13g2_stdcell.gds
+   Copying output for cell sg13g2_nand2_1 from $PDKPATH/libs.ref/sg13g2_stdcell/gds/sg13g2_stdcell.gds
+   Copying output for cell sg13g2_fill_1 from $PDKPATH/libs.ref/sg13g2_stdcell/gds/sg13g2_stdcell.gds
+   Copying output for cell sg13g2_xnor2_1 from $PDKPATH/libs.ref/sg13g2_stdcell/gds/sg13g2_stdcell.gds
+   Copying output for cell sg13g2_a22oi_1 from $PDKPATH/libs.ref/sg13g2_stdcell/gds/sg13g2_stdcell.gds
+   Copying output for cell sg13g2_inv_1 from $PDKPATH/libs.ref/sg13g2_stdcell/gds/sg13g2_stdcell.gds
+   Copying output for cell sg13g2_xor2_1 from $PDKPATH/libs.ref/sg13g2_stdcell/gds/sg13g2_stdcell.gds
+   Copying output for cell sg13g2_a221oi_1 from $PDKPATH/libs.ref/sg13g2_stdcell/gds/sg13g2_stdcell.gds
+   Copying output for cell sg13g2_or2_1 from $PDKPATH/libs.ref/sg13g2_stdcell/gds/sg13g2_stdcell.gds
+   Copying output for cell sg13g2_a21oi_1 from $PDKPATH/libs.ref/sg13g2_stdcell/gds/sg13g2_stdcell.gds
+   Copying output for cell sg13g2_nor2_1 from $PDKPATH/libs.ref/sg13g2_stdcell/gds/sg13g2_stdcell.gds
+   Copying output for cell sg13g2_and3_1 from $PDKPATH/libs.ref/sg13g2_stdcell/gds/sg13g2_stdcell.gds
+   Copying output for cell sg13g2_and2_1 from $PDKPATH/libs.ref/sg13g2_stdcell/gds/sg13g2_stdcell.gds
+   Copying output for cell sg13g2_or3_1 from $PDKPATH/libs.ref/sg13g2_stdcell/gds/sg13g2_stdcell.gds
+   Copying output for cell sg13g2_nand3_1 from $PDKPATH/libs.ref/sg13g2_stdcell/gds/sg13g2_stdcell.gds
+   Copying output for cell sg13g2_mux2_1 from $PDKPATH/libs.ref/sg13g2_stdcell/gds/sg13g2_stdcell.gds
+   Copying output for cell sg13g2_nor4_1 from $PDKPATH/libs.ref/sg13g2_stdcell/gds/sg13g2_stdcell.gds
+   Copying output for cell sg13g2_buf_1 from $PDKPATH/libs.ref/sg13g2_stdcell/gds/sg13g2_stdcell.gds
+   Copying output for cell sg13g2_nor2b_1 from $PDKPATH/libs.ref/sg13g2_stdcell/gds/sg13g2_stdcell.gds
+   Copying output for cell sg13g2_nand2b_1 from $PDKPATH/libs.ref/sg13g2_stdcell/gds/sg13g2_stdcell.gds
+   Copying output for cell sg13g2_a21o_1 from $PDKPATH/libs.ref/sg13g2_stdcell/gds/sg13g2_stdcell.gds
+   Copying output for cell sg13g2_buf_16 from $PDKPATH/libs.ref/sg13g2_stdcell/gds/sg13g2_stdcell.gds
+   Copying output for cell sg13g2_tiehi from $PDKPATH/libs.ref/sg13g2_stdcell/gds/sg13g2_stdcell.gds
+   Copying output for cell sg13g2_inv_4 from $PDKPATH/libs.ref/sg13g2_stdcell/gds/sg13g2_stdcell.gds
+   Copying output for cell sg13g2_buf_8 from $PDKPATH/libs.ref/sg13g2_stdcell/gds/sg13g2_stdcell.gds
+   Copying output for cell sg13g2_inv_16 from $PDKPATH/libs.ref/sg13g2_stdcell/gds/sg13g2_stdcell.gds
+   Copying output for cell sg13g2_inv_8 from $PDKPATH/libs.ref/sg13g2_stdcell/gds/sg13g2_stdcell.gds
+   Copying output for cell sg13g2_nor3_1 from $PDKPATH/libs.ref/sg13g2_stdcell/gds/sg13g2_stdcell.gds
+   Copying output for cell sg13g2_buf_2 from $PDKPATH/libs.ref/sg13g2_stdcell/gds/sg13g2_stdcell.gds
+   Copying output for cell sg13g2_or4_1 from $PDKPATH/libs.ref/sg13g2_stdcell/gds/sg13g2_stdcell.gds
+   Copying output for cell sg13g2_nand4_1 from $PDKPATH/libs.ref/sg13g2_stdcell/gds/sg13g2_stdcell.gds
+   Copying output for cell sg13g2_buf_4 from $PDKPATH/libs.ref/sg13g2_stdcell/gds/sg13g2_stdcell.gds
+   Copying output for cell sg13g2_nand3b_1 from $PDKPATH/libs.ref/sg13g2_stdcell/gds/sg13g2_stdcell.gds
+   Copying output for cell sg13g2_and4_1 from $PDKPATH/libs.ref/sg13g2_stdcell/gds/sg13g2_stdcell.gds
+   Copying output for cell sg13g2_antennanp from $PDKPATH/libs.ref/sg13g2_stdcell/gds/sg13g2_stdcell.gds
+   Copying output for cell sg13g2_inv_2 from $PDKPATH/libs.ref/sg13g2_stdcell/gds/sg13g2_stdcell.gds
+   Generating output for cell tt_um_maw_mnistbnn
+[INFO] GDS Write Complete

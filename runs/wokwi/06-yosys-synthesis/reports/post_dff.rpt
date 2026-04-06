@@ -1,0 +1,537 @@
+162. Printing statistics.
+
+=== $paramod$c9bc438dfe858e9d75bddd12c427471508300052\maxpool_2x2 ===
+
+        +----------Local Count, excluding submodules.
+        |        +-Local Area, excluding submodules.
+        |        | 
+      362        - wires
+      435        - wire bits
+       13        - public wires
+       77        - public wire bits
+        6        - ports
+       38        - port bits
+      419 1.76E+03 cells
+      126        -   $_ANDNOT_
+        8        -   $_AND_
+       49        -   $_MUX_
+        9        -   $_NAND_
+       11        -   $_NOR_
+       21        -   $_NOT_
+       19        -   $_ORNOT_
+       66        -   $_OR_
+       14        -   $_XNOR_
+       60        -   $_XOR_
+       36 1.76E+03   sg13g2_dfrbpq_1
+
+   Area for cell type $_ANDNOT_ is unknown!
+   Area for cell type $_AND_ is unknown!
+   Area for cell type $_MUX_ is unknown!
+   Area for cell type $_NAND_ is unknown!
+   Area for cell type $_NOR_ is unknown!
+   Area for cell type $_NOT_ is unknown!
+   Area for cell type $_ORNOT_ is unknown!
+   Area for cell type $_OR_ is unknown!
+   Area for cell type $_XNOR_ is unknown!
+   Area for cell type $_XOR_ is unknown!
+
+   Chip area for module '$paramod$c9bc438dfe858e9d75bddd12c427471508300052\maxpool_2x2': 1763.596800
+     of which used for sequential elements: 1763.596800 (100.00%)
+
+=== $paramod$f16bc6def46f6441af0290023d3b6045c72e1335\maxpool_2x2 ===
+
+        +----------Local Count, excluding submodules.
+        |        +-Local Area, excluding submodules.
+        |        | 
+      282        - wires
+      355        - wire bits
+       13        - public wires
+       77        - public wire bits
+        6        - ports
+       38        - port bits
+      339 1.76E+03 cells
+      103        -   $_ANDNOT_
+        9        -   $_AND_
+       47        -   $_MUX_
+       10        -   $_NAND_
+        8        -   $_NOR_
+       17        -   $_NOT_
+       12        -   $_ORNOT_
+       51        -   $_OR_
+       13        -   $_XNOR_
+       33        -   $_XOR_
+       36 1.76E+03   sg13g2_dfrbpq_1
+
+   Area for cell type $_ANDNOT_ is unknown!
+   Area for cell type $_AND_ is unknown!
+   Area for cell type $_MUX_ is unknown!
+   Area for cell type $_NAND_ is unknown!
+   Area for cell type $_NOR_ is unknown!
+   Area for cell type $_NOT_ is unknown!
+   Area for cell type $_ORNOT_ is unknown!
+   Area for cell type $_OR_ is unknown!
+   Area for cell type $_XNOR_ is unknown!
+   Area for cell type $_XOR_ is unknown!
+
+   Chip area for module '$paramod$f16bc6def46f6441af0290023d3b6045c72e1335\maxpool_2x2': 1763.596800
+     of which used for sequential elements: 1763.596800 (100.00%)
+
+=== classification_tree ===
+
+        +----------Local Count, excluding submodules.
+        |        +-Local Area, excluding submodules.
+        |        | 
+     1788        - wires
+     1854        - wire bits
+        2        - public wires
+       68        - public wire bits
+        2        - ports
+       68        - port bits
+     1790        - cells
+      481        -   $_ANDNOT_
+       45        -   $_AND_
+      299        -   $_MUX_
+       28        -   $_NAND_
+      154        -   $_NOR_
+      110        -   $_NOT_
+       89        -   $_ORNOT_
+      198        -   $_OR_
+      192        -   $_XNOR_
+      194        -   $_XOR_
+
+   Area for cell type $_ANDNOT_ is unknown!
+   Area for cell type $_AND_ is unknown!
+   Area for cell type $_MUX_ is unknown!
+   Area for cell type $_NAND_ is unknown!
+   Area for cell type $_NOR_ is unknown!
+   Area for cell type $_NOT_ is unknown!
+   Area for cell type $_ORNOT_ is unknown!
+   Area for cell type $_OR_ is unknown!
+   Area for cell type $_XNOR_ is unknown!
+   Area for cell type $_XOR_ is unknown!
+
+=== conv_layer1 ===
+
+        +----------Local Count, excluding submodules.
+        |        +-Local Area, excluding submodules.
+        |        | 
+      300        - wires
+      437        - wire bits
+       21        - public wires
+      149        - public wire bits
+        6        - ports
+       38        - port bits
+      353 1.71E+03 cells
+       91        -   $_ANDNOT_
+        9        -   $_AND_
+       70        -   $_MUX_
+       14        -   $_NAND_
+       19        -   $_NOR_
+       19        -   $_NOT_
+        8        -   $_ORNOT_
+       39        -   $_OR_
+       11        -   $_XNOR_
+       38        -   $_XOR_
+       35 1.71E+03   sg13g2_dfrbpq_1
+        2        - submodules
+        1        -   conv_weights_3x3_l1
+        1        -   load_conv_op_3x6
+
+   Area for cell type $_ANDNOT_ is unknown!
+   Area for cell type $_AND_ is unknown!
+   Area for cell type $_MUX_ is unknown!
+   Area for cell type $_NAND_ is unknown!
+   Area for cell type $_NOR_ is unknown!
+   Area for cell type $_NOT_ is unknown!
+   Area for cell type $_ORNOT_ is unknown!
+   Area for cell type $_OR_ is unknown!
+   Area for cell type $_XNOR_ is unknown!
+   Area for cell type $_XOR_ is unknown!
+
+   Chip area for module '\conv_layer1': 1714.608000
+     of which used for sequential elements: 1714.608000 (100.00%)
+
+=== conv_layer2 ===
+
+        +----------Local Count, excluding submodules.
+        |        +-Local Area, excluding submodules.
+        |        | 
+     2147        - wires
+     2882        - wire bits
+       85        - public wires
+      609        - public wire bits
+        6        - ports
+       38        - port bits
+     2791 2.37E+04 cells
+      883        -   $_ANDNOT_
+       10        -   $_AND_
+      774        -   $_MUX_
+        9        -   $_NAND_
+       32        -   $_NOR_
+       34        -   $_NOT_
+       50        -   $_ORNOT_
+      447        -   $_OR_
+        8        -   $_XNOR_
+       60        -   $_XOR_
+      484 2.37E+04   sg13g2_dfrbpq_1
+        2        - submodules
+        1        -   conv_weights_3x3_l2
+        1        -   load_conv_op_3x6
+
+   Area for cell type $_ANDNOT_ is unknown!
+   Area for cell type $_AND_ is unknown!
+   Area for cell type $_MUX_ is unknown!
+   Area for cell type $_NAND_ is unknown!
+   Area for cell type $_NOR_ is unknown!
+   Area for cell type $_NOT_ is unknown!
+   Area for cell type $_ORNOT_ is unknown!
+   Area for cell type $_OR_ is unknown!
+   Area for cell type $_XNOR_ is unknown!
+   Area for cell type $_XOR_ is unknown!
+
+   Chip area for module '\conv_layer2': 23710.579200
+     of which used for sequential elements: 23710.579200 (100.00%)
+
+=== conv_layer3 ===
+
+        +----------Local Count, excluding submodules.
+        |        +-Local Area, excluding submodules.
+        |        | 
+      269        - wires
+      498        - wire bits
+       10        - public wires
+      174        - public wire bits
+        7        - ports
+      102        - port bits
+      354 3.53E+03 cells
+      109        -   $_ANDNOT_
+       11        -   $_AND_
+       86        -   $_MUX_
+       11        -   $_NAND_
+        3        -   $_NOR_
+        8        -   $_NOT_
+       11        -   $_ORNOT_
+       41        -   $_OR_
+        2        -   $_XOR_
+       72 3.53E+03   sg13g2_dfrbpq_1
+        1        - submodules
+        1        -   conv_weights_2x2_l3
+
+   Area for cell type $_ANDNOT_ is unknown!
+   Area for cell type $_AND_ is unknown!
+   Area for cell type $_MUX_ is unknown!
+   Area for cell type $_NAND_ is unknown!
+   Area for cell type $_NOR_ is unknown!
+   Area for cell type $_NOT_ is unknown!
+   Area for cell type $_ORNOT_ is unknown!
+   Area for cell type $_OR_ is unknown!
+   Area for cell type $_XNOR_ is unknown!
+   Area for cell type $_XOR_ is unknown!
+
+   Chip area for module '\conv_layer3': 3527.193600
+     of which used for sequential elements: 3527.193600 (100.00%)
+
+=== conv_weights_2x2_l3 ===
+
+        +----------Local Count, excluding submodules.
+        |        +-Local Area, excluding submodules.
+        |        | 
+    21290        - wires
+    21416        - wire bits
+        2        - public wires
+      128        - public wire bits
+        2        - ports
+      128        - port bits
+    21352        - cells
+     7099        -   $_ANDNOT_
+      143        -   $_AND_
+      320        -   $_NAND_
+     2275        -   $_NOR_
+      627        -   $_NOT_
+      817        -   $_ORNOT_
+     2005        -   $_OR_
+     2051        -   $_XNOR_
+     6015        -   $_XOR_
+
+   Area for cell type $_ANDNOT_ is unknown!
+   Area for cell type $_AND_ is unknown!
+   Area for cell type $_NAND_ is unknown!
+   Area for cell type $_NOR_ is unknown!
+   Area for cell type $_NOT_ is unknown!
+   Area for cell type $_ORNOT_ is unknown!
+   Area for cell type $_OR_ is unknown!
+   Area for cell type $_XNOR_ is unknown!
+   Area for cell type $_XOR_ is unknown!
+
+=== conv_weights_3x3_l1 ===
+
+        +----------Local Count, excluding submodules.
+        |        +-Local Area, excluding submodules.
+        |        | 
+      209        - wires
+      246        - wire bits
+        9        - public wires
+       46        - public wire bits
+        9        - ports
+       46        - port bits
+      216        - cells
+       48        -   $_ANDNOT_
+        8        -   $_AND_
+       12        -   $_MUX_
+       38        -   $_NOT_
+        1        -   $_ORNOT_
+       25        -   $_OR_
+       14        -   $_XNOR_
+       70        -   $_XOR_
+
+   Area for cell type $_ANDNOT_ is unknown!
+   Area for cell type $_AND_ is unknown!
+   Area for cell type $_MUX_ is unknown!
+   Area for cell type $_NOT_ is unknown!
+   Area for cell type $_ORNOT_ is unknown!
+   Area for cell type $_OR_ is unknown!
+   Area for cell type $_XNOR_ is unknown!
+   Area for cell type $_XOR_ is unknown!
+
+=== conv_weights_3x3_l2 ===
+
+        +----------Local Count, excluding submodules.
+        |        +-Local Area, excluding submodules.
+        |        | 
+      492        - wires
+      532        - wire bits
+        9        - public wires
+       49        - public wire bits
+        9        - ports
+       49        - port bits
+      499        - cells
+       61        -   $_ANDNOT_
+       11        -   $_AND_
+      179        -   $_MUX_
+        5        -   $_NAND_
+        1        -   $_NOR_
+       42        -   $_NOT_
+        4        -   $_ORNOT_
+      110        -   $_OR_
+       15        -   $_XNOR_
+       71        -   $_XOR_
+
+   Area for cell type $_ANDNOT_ is unknown!
+   Area for cell type $_AND_ is unknown!
+   Area for cell type $_MUX_ is unknown!
+   Area for cell type $_NAND_ is unknown!
+   Area for cell type $_NOR_ is unknown!
+   Area for cell type $_NOT_ is unknown!
+   Area for cell type $_ORNOT_ is unknown!
+   Area for cell type $_OR_ is unknown!
+   Area for cell type $_XNOR_ is unknown!
+   Area for cell type $_XOR_ is unknown!
+
+=== load_conv_op_3x6 ===
+
+        +----------Local Count, excluding submodules.
+        |        +-Local Area, excluding submodules.
+        |        | 
+      525        - wires
+      624        - wire bits
+       12        - public wires
+       96        - public wire bits
+       10        - ports
+       80        - port bits
+      572 1.71E+03 cells
+      153        -   $_ANDNOT_
+       11        -   $_AND_
+      155        -   $_MUX_
+       23        -   $_NAND_
+       13        -   $_NOR_
+       34        -   $_NOT_
+        9        -   $_ORNOT_
+       58        -   $_OR_
+       11        -   $_XNOR_
+       70        -   $_XOR_
+       35 1.71E+03   sg13g2_dfrbpq_1
+
+   Area for cell type $_ANDNOT_ is unknown!
+   Area for cell type $_AND_ is unknown!
+   Area for cell type $_MUX_ is unknown!
+   Area for cell type $_NAND_ is unknown!
+   Area for cell type $_NOR_ is unknown!
+   Area for cell type $_NOT_ is unknown!
+   Area for cell type $_ORNOT_ is unknown!
+   Area for cell type $_OR_ is unknown!
+   Area for cell type $_XNOR_ is unknown!
+   Area for cell type $_XOR_ is unknown!
+
+   Chip area for module '\load_conv_op_3x6': 1714.608000
+     of which used for sequential elements: 1714.608000 (100.00%)
+
+=== main ===
+
+        +----------Local Count, excluding submodules.
+        |        +-Local Area, excluding submodules.
+        |        | 
+      346        - wires
+      603        - wire bits
+       31        - public wires
+      288        - public wire bits
+       12        - ports
+       50        - port bits
+      354  636.854 cells
+      106        -   $_ANDNOT_
+      138        -   $_AND_
+        2        -   $_MUX_
+       25        -   $_NAND_
+        2        -   $_NOT_
+       68        -   $_OR_
+       13  636.854   sg13g2_dfrbpq_1
+        7        - submodules
+        1        -   $paramod$c9bc438dfe858e9d75bddd12c427471508300052\maxpool_2x2
+        1        -   $paramod$f16bc6def46f6441af0290023d3b6045c72e1335\maxpool_2x2
+        1        -   classification_tree
+        1        -   conv_layer1
+        1        -   conv_layer2
+        1        -   conv_layer3
+        1        -   mnist_loader
+
+   Area for cell type $_ANDNOT_ is unknown!
+   Area for cell type $_AND_ is unknown!
+   Area for cell type $_MUX_ is unknown!
+   Area for cell type $_NAND_ is unknown!
+   Area for cell type $_NOR_ is unknown!
+   Area for cell type $_NOT_ is unknown!
+   Area for cell type $_ORNOT_ is unknown!
+   Area for cell type $_OR_ is unknown!
+   Area for cell type $_XNOR_ is unknown!
+   Area for cell type $_XOR_ is unknown!
+
+   Chip area for module '\main': 636.854400
+     of which used for sequential elements: 636.854400 (100.00%)
+
+=== mnist_loader ===
+
+        +----------Local Count, excluding submodules.
+        |        +-Local Area, excluding submodules.
+        |        | 
+       45        - wires
+       99        - wire bits
+        9        - public wires
+       51        - public wire bits
+        7        - ports
+       46        - port bits
+       63   391.91 cells
+       18        -   $_ANDNOT_
+        3        -   $_AND_
+        7        -   $_MUX_
+        4        -   $_NAND_
+        4        -   $_NOR_
+        5        -   $_NOT_
+        9        -   $_OR_
+        5        -   $_XOR_
+        8   391.91   sg13g2_dfrbpq_1
+
+   Area for cell type $_ANDNOT_ is unknown!
+   Area for cell type $_AND_ is unknown!
+   Area for cell type $_MUX_ is unknown!
+   Area for cell type $_NAND_ is unknown!
+   Area for cell type $_NOR_ is unknown!
+   Area for cell type $_NOT_ is unknown!
+   Area for cell type $_OR_ is unknown!
+   Area for cell type $_XOR_ is unknown!
+
+   Chip area for module '\mnist_loader': 391.910400
+     of which used for sequential elements: 391.910400 (100.00%)
+
+=== tt_um_maw_mnistbnn ===
+
+        +----------Local Count, excluding submodules.
+        |        +-Local Area, excluding submodules.
+        |        | 
+       16        - wires
+       82        - wire bits
+       16        - public wires
+       82        - public wire bits
+        8        - ports
+       43        - port bits
+        1        - cells
+        1        -   RM_IHPSG13_1P_256x8_c3_bm_bist
+        1        - submodules
+        1        -   main
+
+   Area for cell type $_ANDNOT_ is unknown!
+   Area for cell type $_AND_ is unknown!
+   Area for cell type $_MUX_ is unknown!
+   Area for cell type $_NAND_ is unknown!
+   Area for cell type $_NOR_ is unknown!
+   Area for cell type $_NOT_ is unknown!
+   Area for cell type $_ORNOT_ is unknown!
+   Area for cell type $_OR_ is unknown!
+   Area for cell type $_XNOR_ is unknown!
+   Area for cell type $_XOR_ is unknown!
+   Area for cell type \RM_IHPSG13_1P_256x8_c3_bm_bist is unknown!
+
+   Chip area for module '\tt_um_maw_mnistbnn': 0.000000
+     of which used for sequential elements: 0.000000 (nan%)
+
+=== design hierarchy ===
+
+        +----------Count including submodules.
+        |        +-Area including submodules.
+        |        | 
+    29675 3.69E+04 tt_um_maw_mnistbnn
+      354  636.854 main
+      419 1.76E+03   $paramod$c9bc438dfe858e9d75bddd12c427471508300052\maxpool_2x2
+      339 1.76E+03   $paramod$f16bc6def46f6441af0290023d3b6045c72e1335\maxpool_2x2
+     1790        -   classification_tree
+      353 1.71E+03   conv_layer1
+      216        -     conv_weights_3x3_l1
+      572 1.71E+03     load_conv_op_3x6
+     2791 2.37E+04   conv_layer2
+      499        -     conv_weights_3x3_l2
+      572 1.71E+03     load_conv_op_3x6
+      354 3.53E+03   conv_layer3
+    21352        -     conv_weights_2x2_l3
+       63   391.91   mnist_loader
+
+        +----------Count including submodules.
+        |        +-Area including submodules.
+        |        | 
+    28596        - wires
+    30687        - wire bits
+      244        - public wires
+     1990        - public wire bits
+      100        - ports
+      844        - port bits
+        -        - memories
+        -        - memory bits
+        -        - processes
+    29675 3.69E+04 cells
+     9431        -   $_ANDNOT_
+      417        -   $_AND_
+     1835        -   $_MUX_
+      481        -   $_NAND_
+     2533        -   $_NOR_
+      991        -   $_NOT_
+     1029        -   $_ORNOT_
+     3175        -   $_OR_
+     2340        -   $_XNOR_
+     6688        -   $_XOR_
+        1        -   RM_IHPSG13_1P_256x8_c3_bm_bist
+      754 3.69E+04   sg13g2_dfrbpq_1
+        1 3.69E+04 submodules
+        1 3.69E+04   main
+
+   Area for cell type $_ANDNOT_ is unknown!
+   Area for cell type $_AND_ is unknown!
+   Area for cell type $_MUX_ is unknown!
+   Area for cell type $_NAND_ is unknown!
+   Area for cell type $_NOR_ is unknown!
+   Area for cell type $_NOT_ is unknown!
+   Area for cell type $_ORNOT_ is unknown!
+   Area for cell type $_OR_ is unknown!
+   Area for cell type $_XNOR_ is unknown!
+   Area for cell type $_XOR_ is unknown!
+   Area for cell type \RM_IHPSG13_1P_256x8_c3_bm_bist is unknown!
+
+   Chip area for top module '\tt_um_maw_mnistbnn': 36937.555200
+     of which used for sequential elements: 36937.555200 (100.00%)
+

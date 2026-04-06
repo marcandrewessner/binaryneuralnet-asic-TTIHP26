@@ -1,0 +1,39 @@
+
+===========================================================================
+Violator List
+============================================================================
+[hold reg-reg] m.u_mnist_loader._75_/Q -> sram/A_ADDR[4] : -0.306838
+[hold reg-reg] m.u_mnist_loader._71_/Q -> sram/A_ADDR[0] : -0.306837
+[hold reg-reg] m.u_mnist_loader._72_/Q -> sram/A_ADDR[1] : -0.302992
+[hold reg-reg] m.u_mnist_loader._74_/Q -> sram/A_ADDR[3] : -0.297406
+[hold reg-reg] m.u_mnist_loader._73_/Q -> sram/A_ADDR[2] : -0.265490
+[hold reg-reg] m._282_/Q -> sram/A_ADDR[6] : -0.158073
+[hold reg-reg] m._282_/Q -> sram/A_ADDR[7] : -0.154358
+[hold reg-reg] m._280_/Q -> sram/A_BM[3] : -0.120334
+[hold reg-reg] m._280_/Q -> sram/A_BM[2] : -0.108450
+[hold reg-reg] m._280_/Q -> sram/A_BM[1] : -0.088663
+[hold reg-reg] m._280_/Q -> sram/A_DIN[4] : -0.081568
+[hold reg-reg] m._280_/Q -> sram/A_BM[5] : -0.067264
+[hold reg-reg] m.u_pool2._407_/Q -> sram/A_ADDR[5] : -0.056694
+[hold reg-reg] m._282_/Q -> sram/A_BM[0] : -0.054964
+[hold reg-reg] m.u_conv2.u_loader._929_/Q -> m.u_conv2.u_loader._933_/D : -0.032272
+[hold reg-reg] m._280_/Q -> sram/A_DIN[0] : -0.032112
+[hold reg-reg] m.u_conv1.u_loader._929_/Q -> m.u_conv1.u_loader._933_/D : -0.029013
+[hold reg-reg] m._284_/Q -> sram/A_DIN[3] : -0.028902
+[hold reg-reg] m._280_/Q -> sram/A_DIN[7] : -0.024526
+[hold reg-reg] m._280_/Q -> sram/A_DIN[5] : -0.023057
+[hold reg-reg] m.u_pool1._536_/Q -> m.u_pool1._534_/D : -0.021824
+[hold reg-reg] m._282_/Q -> sram/A_BM[4] : -0.021605
+[hold reg-reg] m._279_/Q -> sram/A_BM[6] : -0.020942
+[hold reg-reg] m.u_pool1._537_/Q -> m.u_pool1._535_/D : -0.020791
+[hold reg-reg] m.u_pool2._406_/Q -> m.u_pool2._404_/D : -0.020787
+[hold reg-reg] m.u_pool2._407_/Q -> m.u_pool2._405_/D : -0.017961
+[hold reg-reg] m._279_/Q -> sram/A_BM[7] : -0.016238
+[hold reg-reg] m._284_/Q -> sram/A_DIN[1] : -0.013374
+[hold reg-reg] m._284_/Q -> sram/A_DIN[2] : -0.011237
+Writing metric timing__hold_vio__count__corner:nom_typ_1p20V_25C: 29
+Writing metric timing__hold_r2r__ws__corner:nom_typ_1p20V_25C: -0.306838
+Writing metric timing__hold_r2r_vio__count__corner:nom_typ_1p20V_25C: 29
+Writing metric timing__setup_vio__count__corner:nom_typ_1p20V_25C: 0
+Writing metric timing__setup_r2r__ws__corner:nom_typ_1p20V_25C: 94.005013
+Writing metric timing__setup_r2r_vio__count__corner:nom_typ_1p20V_25C: 0

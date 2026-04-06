@@ -1,0 +1,271 @@
+{
+    "STD_CELL_LIBRARY": "sg13g2_stdcell",
+    "VDD_PIN": "VPWR",
+    "GND_PIN": "VGND",
+    "TECH_LEFS": {
+        "nom_*": "/Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/ttsetup/pdk/ciel/ihp-sg13g2/versions/c4b8b4e5e7a05f375cca3815d51b3a37721fbf5c/ihp-sg13g2/libs.ref/sg13g2_stdcell/lef/sg13g2_tech.lef",
+        "min_*": "/Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/ttsetup/pdk/ciel/ihp-sg13g2/versions/c4b8b4e5e7a05f375cca3815d51b3a37721fbf5c/ihp-sg13g2/libs.ref/sg13g2_stdcell/lef/sg13g2_tech.lef",
+        "max_*": "/Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/ttsetup/pdk/ciel/ihp-sg13g2/versions/c4b8b4e5e7a05f375cca3815d51b3a37721fbf5c/ihp-sg13g2/libs.ref/sg13g2_stdcell/lef/sg13g2_tech.lef"
+    },
+    "PRIMARY_GDSII_STREAMOUT_TOOL": "magic",
+    "DEFAULT_MAX_TRAN": null,
+    "DEFAULT_CORNER": "nom_typ_1p20V_25C",
+    "STA_CORNERS": [
+        "nom_fast_1p32V_m40C",
+        "nom_slow_1p08V_125C",
+        "nom_typ_1p20V_25C"
+    ],
+    "RT_MIN_LAYER": "Metal2",
+    "RT_MAX_LAYER": "TopMetal1",
+    "SCL_GROUND_PINS": [
+        "VSS"
+    ],
+    "SCL_POWER_PINS": [
+        "VDD"
+    ],
+    "TRISTATE_CELLS": [
+        "sg13g2_ebufn_*",
+        "sg13g2_einvn_*"
+    ],
+    "FILL_CELLS": [
+        "sg13g2_fill_1",
+        "sg13g2_fill_2"
+    ],
+    "DECAP_CELLS": [
+        "sg13g2_decap_*"
+    ],
+    "LIB": {
+        "nom_typ_1p20V_25C": [
+            "/Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/ttsetup/pdk/ciel/ihp-sg13g2/versions/c4b8b4e5e7a05f375cca3815d51b3a37721fbf5c/ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_typ_1p20V_25C.lib",
+            "/Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/ttsetup/pdk/ciel/ihp-sg13g2/versions/c4b8b4e5e7a05f375cca3815d51b3a37721fbf5c/ihp-sg13g2/libs.ref/sg13g2_io/lib/sg13g2_io_typ_1p2V_3p3V_25C.lib"
+        ],
+        "nom_fast_1p32V_m40C": [
+            "/Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/ttsetup/pdk/ciel/ihp-sg13g2/versions/c4b8b4e5e7a05f375cca3815d51b3a37721fbf5c/ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_fast_1p32V_m40C.lib",
+            "/Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/ttsetup/pdk/ciel/ihp-sg13g2/versions/c4b8b4e5e7a05f375cca3815d51b3a37721fbf5c/ihp-sg13g2/libs.ref/sg13g2_io/lib/sg13g2_io_fast_1p32V_3p6V_m40C.lib"
+        ],
+        "nom_slow_1p08V_125C": [
+            "/Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/ttsetup/pdk/ciel/ihp-sg13g2/versions/c4b8b4e5e7a05f375cca3815d51b3a37721fbf5c/ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_slow_1p08V_125C.lib",
+            "/Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/ttsetup/pdk/ciel/ihp-sg13g2/versions/c4b8b4e5e7a05f375cca3815d51b3a37721fbf5c/ihp-sg13g2/libs.ref/sg13g2_io/lib/sg13g2_io_slow_1p08V_3p0V_125C.lib"
+        ]
+    },
+    "CELL_LEFS": [
+        "/Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/ttsetup/pdk/ciel/ihp-sg13g2/versions/c4b8b4e5e7a05f375cca3815d51b3a37721fbf5c/ihp-sg13g2/libs.ref/sg13g2_stdcell/lef/sg13g2_stdcell.lef"
+    ],
+    "CELL_GDS": [
+        "/Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/ttsetup/pdk/ciel/ihp-sg13g2/versions/c4b8b4e5e7a05f375cca3815d51b3a37721fbf5c/ihp-sg13g2/libs.ref/sg13g2_stdcell/gds/sg13g2_stdcell.gds"
+    ],
+    "CELL_VERILOG_MODELS": [
+        "/Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/ttsetup/pdk/ciel/ihp-sg13g2/versions/c4b8b4e5e7a05f375cca3815d51b3a37721fbf5c/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v"
+    ],
+    "CELL_BB_VERILOG_MODELS": null,
+    "CELL_SPICE_MODELS": [
+        "/Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/ttsetup/pdk/ciel/ihp-sg13g2/versions/c4b8b4e5e7a05f375cca3815d51b3a37721fbf5c/ihp-sg13g2/libs.ref/sg13g2_stdcell/spice/sg13g2_stdcell.spice"
+    ],
+    "CELL_CDLS": [
+        "/Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/ttsetup/pdk/ciel/ihp-sg13g2/versions/c4b8b4e5e7a05f375cca3815d51b3a37721fbf5c/ihp-sg13g2/libs.ref/sg13g2_stdcell/cdl/sg13g2_stdcell.cdl"
+    ],
+    "SYNTH_EXCLUDED_CELL_FILE": "/Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/ttsetup/pdk/ciel/ihp-sg13g2/versions/c4b8b4e5e7a05f375cca3815d51b3a37721fbf5c/ihp-sg13g2/libs.tech/librelane/sg13g2_stdcell/synth_exclude.cells",
+    "PNR_EXCLUDED_CELL_FILE": "/Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/ttsetup/pdk/ciel/ihp-sg13g2/versions/c4b8b4e5e7a05f375cca3815d51b3a37721fbf5c/ihp-sg13g2/libs.tech/librelane/sg13g2_stdcell/pnr_exclude.cells",
+    "OUTPUT_CAP_LOAD": 6,
+    "MAX_FANOUT_CONSTRAINT": 10,
+    "MAX_TRANSITION_CONSTRAINT": null,
+    "MAX_CAPACITANCE_CONSTRAINT": null,
+    "CLOCK_UNCERTAINTY_CONSTRAINT": 0.25,
+    "CLOCK_TRANSITION_CONSTRAINT": 0.15,
+    "TIME_DERATING_CONSTRAINT": 5,
+    "IO_DELAY_CONSTRAINT": 20,
+    "SYNTH_DRIVING_CELL": "sg13g2_buf_4/X",
+    "SYNTH_CLK_DRIVING_CELL": null,
+    "SYNTH_TIEHI_CELL": "sg13g2_tiehi/L_HI",
+    "SYNTH_TIELO_CELL": "sg13g2_tielo/L_LO",
+    "SYNTH_BUFFER_CELL": "sg13g2_buf_1/A/X",
+    "PLACE_SITE": "CoreSite",
+    "CELL_PAD_EXCLUDE": [
+        "sg13g2_fill_*",
+        "sg13g2_decap_*"
+    ],
+    "DIODE_CELL": "sg13g2_antennanp/A",
+    "WELLTAP_CELL": null,
+    "ENDCAP_CELL": null,
+    "DESIGN_DIR": "/Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/src",
+    "PDK_ROOT": "/Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/ttsetup/pdk/ciel/ihp-sg13g2/versions/c4b8b4e5e7a05f375cca3815d51b3a37721fbf5c",
+    "DESIGN_NAME": "tt_um_maw_mnistbnn",
+    "PDK": "ihp-sg13g2",
+    "CLOCK_PERIOD": 100,
+    "CLOCK_PORT": "clk",
+    "CLOCK_NET": null,
+    "VDD_NETS": null,
+    "GND_NETS": null,
+    "DIE_AREA": [
+        0,
+        0,
+        1289.28,
+        710.64
+    ],
+    "EXTRA_EXCLUDED_CELLS": null,
+    "MACROS": {
+        "RM_IHPSG13_1P_256x8_c3_bm_bist": {
+            "gds": [
+                "/Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.gds"
+            ],
+            "lef": [
+                "/Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.lef"
+            ],
+            "instances": {
+                "sram": {
+                    "location": [
+                        42,
+                        80
+                    ],
+                    "orientation": "W"
+                }
+            },
+            "vh": [],
+            "nl": [
+                "/Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.v"
+            ],
+            "pnl": [],
+            "spef": {},
+            "lib": {
+                "nom_*": [
+                    "/Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist_typ_1p20V_25C.lib"
+                ],
+                "min_*": [
+                    "/Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist_fast_1p32V_m55C.lib"
+                ],
+                "max_*": [
+                    "/Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist_slow_1p08V_125C.lib"
+                ],
+                "*": [
+                    "/Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist_typ_1p20V_25C.lib"
+                ]
+            },
+            "spice": [
+                "/Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist.cdl"
+            ],
+            "sdf": {},
+            "json_h": null
+        }
+    },
+    "EXTRA_LEFS": null,
+    "EXTRA_VERILOG_MODELS": null,
+    "EXTRA_SPICE_MODELS": null,
+    "EXTRA_CDLS": null,
+    "EXTRA_LIBS": null,
+    "EXTRA_GDS": null,
+    "FALLBACK_SDC": "/nix/store/nxfh9ig6whzb1djifv7z8km0rkvp0kxl-python3-3.13.9-env/lib/python3.13/site-packages/librelane/scripts/base.sdc",
+    "PAD_GDS": [
+        "/Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/ttsetup/pdk/ciel/ihp-sg13g2/versions/c4b8b4e5e7a05f375cca3815d51b3a37721fbf5c/ihp-sg13g2/libs.ref/sg13g2_io/gds/sg13g2_io.gds"
+    ],
+    "PAD_LEFS": [
+        "/Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/ttsetup/pdk/ciel/ihp-sg13g2/versions/c4b8b4e5e7a05f375cca3815d51b3a37721fbf5c/ihp-sg13g2/libs.ref/sg13g2_io/lef/sg13g2_io.lef"
+    ],
+    "PAD_VERILOG_MODELS": [
+        "/Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/ttsetup/pdk/ciel/ihp-sg13g2/versions/c4b8b4e5e7a05f375cca3815d51b3a37721fbf5c/ihp-sg13g2/libs.ref/sg13g2_io/verilog/sg13g2_io.v"
+    ],
+    "PAD_SPICE_MODELS": [
+        "/Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/ttsetup/pdk/ciel/ihp-sg13g2/versions/c4b8b4e5e7a05f375cca3815d51b3a37721fbf5c/ihp-sg13g2/libs.ref/sg13g2_io/spice/sg13g2_io.spi"
+    ],
+    "PAD_CDLS": [
+        "/Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/ttsetup/pdk/ciel/ihp-sg13g2/versions/c4b8b4e5e7a05f375cca3815d51b3a37721fbf5c/ihp-sg13g2/libs.ref/sg13g2_io/cdl/sg13g2_io.cdl"
+    ],
+    "PAD_LIBS": null,
+    "PAD_CORNER": [
+        "sg13g2_Corner"
+    ],
+    "PAD_FILLERS": [
+        "sg13g2_Filler10000",
+        "sg13g2_Filler4000",
+        "sg13g2_Filler2000",
+        "sg13g2_Filler1000",
+        "sg13g2_Filler400",
+        "sg13g2_Filler200"
+    ],
+    "PAD_SITE_NAME": "sg13g2_ioSite",
+    "PAD_CORNER_SITE_NAME": "sg13g2_cornerSite",
+    "PAD_FAKE_SITES": null,
+    "PAD_BONDPAD_NAME": "bondpad_70x70",
+    "PAD_BONDPAD_WIDTH": 70,
+    "PAD_BONDPAD_HEIGHT": 70,
+    "PAD_BONDPAD_OFFSETS": {
+        "sg13g2_IOPad*": [
+            5,
+            -70
+        ]
+    },
+    "PAD_PLACE_IO_TERMINALS": null,
+    "PAD_EDGE_SPACING": 140,
+    "PNR_CORNERS": null,
+    "SET_RC_VERBOSE": false,
+    "LAYERS_RC": {
+        "*": {
+            "Metal1": {
+                "res": 0.00854576,
+                "cap": 1e-10
+            },
+            "Metal2": {
+                "res": 0.00253519,
+                "cap": 0.000169121
+            },
+            "Metal3": {
+                "res": 0.00154329,
+                "cap": 0.000182832
+            },
+            "Metal4": {
+                "res": 0.000631424,
+                "cap": 0.000166454
+            },
+            "Metal5": {
+                "res": 0.000684051,
+                "cap": 8.57431e-05
+            }
+        }
+    },
+    "VIAS_R": {
+        "*": {
+            "Cont": {
+                "res": 0.0022
+            },
+            "Via1": {
+                "res": 0.002
+            },
+            "Via2": {
+                "res": 0.002
+            },
+            "Via3": {
+                "res": 0.002
+            },
+            "Via4": {
+                "res": 0.002
+            },
+            "TopVia1": {
+                "res": 0.0004
+            },
+            "TopVia2": {
+                "res": 0.00022
+            }
+        }
+    },
+    "SIGNAL_WIRE_RC_LAYERS": null,
+    "CLOCK_WIRE_RC_LAYERS": null,
+    "PDN_CONNECT_MACROS_TO_GRID": true,
+    "PDN_MACRO_CONNECTIONS": [
+        "sram VPWR VGND VDD! VSS!",
+        "sram VPWR VGND VDDARRAY! VSS!"
+    ],
+    "PDN_ENABLE_GLOBAL_CONNECTIONS": true,
+    "PNR_SDC_FILE": null,
+    "FP_DEF_TEMPLATE": "/Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/tt/tech/ihp-sg13g2/def/tt_block_6x4_pgvdd.def",
+    "STA_EXTRA_CORNER_TCL_FILE": null,
+    "DEDUPLICATE_CORNERS": false,
+    "RCX_MERGE_VIA_WIRE_RES": true,
+    "RCX_SDC_FILE": null,
+    "RCX_RULESETS": {
+        "nom_*": "/Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/ttsetup/pdk/ciel/ihp-sg13g2/versions/c4b8b4e5e7a05f375cca3815d51b3a37721fbf5c/ihp-sg13g2/libs.tech/librelane/IHP_rcx_patterns.rules"
+    },
+    "STA_THREADS": null,
+    "meta": {
+        "librelane_version": "3.0.0rc1",
+        "step": "OpenROAD.RCX"
+    }
+}

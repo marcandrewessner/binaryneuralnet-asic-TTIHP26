@@ -1,0 +1,172 @@
+Reading timing models for corner nom_typ_1p20V_25C…
+Reading timing library for the 'nom_typ_1p20V_25C' corner at '/Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/ttsetup/pdk/ciel/ihp-sg13g2/versions/c4b8b4e5e7a05f375cca3815d51b3a37721fbf5c/ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_typ_1p20V_25C.lib'…
+Reading timing library for the 'nom_typ_1p20V_25C' corner at '/Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/ttsetup/pdk/ciel/ihp-sg13g2/versions/c4b8b4e5e7a05f375cca3815d51b3a37721fbf5c/ihp-sg13g2/libs.ref/sg13g2_io/lib/sg13g2_io_typ_1p2V_3p3V_25C.lib'…
+Reading timing library for the 'nom_typ_1p20V_25C' corner at '/Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist_typ_1p20V_25C.lib'…
+Reading timing library for the 'nom_typ_1p20V_25C' corner at '/Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist_typ_1p20V_25C.lib'…
+[WARNING STA-1140] /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist_typ_1p20V_25C.lib line 20, library RM_IHPSG13_1P_256x8_c3_bm_bist_typ_1p20V_25C already exists.
+Reading OpenROAD database at '/Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/runs/wokwi/27-odb-applydeftemplate/tt_um_maw_mnistbnn.odb'…
+Reading design constraints file at '/nix/store/nxfh9ig6whzb1djifv7z8km0rkvp0kxl-python3-3.13.9-env/lib/python3.13/site-packages/librelane/scripts/base.sdc'…
+[INFO] Using clock clk…
+[INFO] Setting output delay to: 20
+[INFO] Setting input delay to: 20
+[INFO] Setting load to: 0.006
+[INFO] Setting clock uncertainty to: 0.25
+[INFO] Setting clock transition to: 0.15
+[INFO] Setting timing derate to: 5%
+[INFO] Setting signal min routing layer to: Metal2 and clock min routing layer to Metal2. 
+[INFO] Setting signal max routing layer to: TopMetal1 and clock max routing layer to TopMetal1. 
++ global_placement -density 0.5 -routability_driven -pad_right 0 -pad_left 0 -init_wirelength_coef 0.25
+[INFO GPL-0001] ---- Initialize GPL Main Data Structures
+[INFO GPL-0002] DBU: 1000
+[INFO GPL-0003] SiteSize: (  0.480  3.780 ) um
+[INFO GPL-0004] CoreBBox: (  2.880  3.780 ) ( 1286.400 706.860 ) um
+[INFO GPL-0036] Movable instances area:     269356.752 um^2
+[INFO GPL-0037] Total instances area:       287074.368 um^2
+[INFO GPL-0035] Pin density area adjust:     29742.159 um^2
+[INFO GPL-0032] ---- Initialize Region: Top-level
+[INFO GPL-0006] Number of instances:             22760
+[INFO GPL-0007] Movable instances:               22627
+[INFO GPL-0008] Fixed instances:                     1
+[INFO GPL-0009] Dummy instances:                   132
+[INFO GPL-0010] Number of nets:                  22654
+[INFO GPL-0011] Number of pins:                  75344
+[INFO GPL-0012] Die BBox:  (  0.000  0.000 ) ( 1289.280 710.640 ) um
+[INFO GPL-0013] Core BBox: (  2.880  3.780 ) ( 1286.400 706.860 ) um
+[INFO GPL-0016] Core area:                  902417.242 um^2
+[INFO GPL-0014] Region name: top-level.
+[INFO GPL-0015] Region area:                902417.242 um^2
+[INFO GPL-0017] Fixed instances area:        24663.139 um^2
+[INFO GPL-0018] Movable instances area:     299098.911 um^2
+[INFO GPL-0019] Utilization:                    34.075 %
+[INFO GPL-0020] Standard cells area:        299098.911 um^2
+[INFO GPL-0021] Large instances area:            0.000 um^2
+[INFO GPL-0005] ---- Execute Conjugate Gradient Initial Placement.
+[INFO GPL-0051] Source of initial instance position counters:
+	Odb location = 0	Core center = 22627	Region center = 0
+[InitialPlace]  Iter: 1 conjugate gradient residual: 0.00392158 HPWL: 231133310
+[InitialPlace]  Iter: 2 conjugate gradient residual: 0.00179655 HPWL: 249445976
+[InitialPlace]  Iter: 3 conjugate gradient residual: 0.00047756 HPWL: 246698462
+[InitialPlace]  Iter: 4 conjugate gradient residual: 0.00107472 HPWL: 245994871
+[InitialPlace]  Iter: 5 conjugate gradient residual: 0.00049023 HPWL: 243512230
+[InitialPlace]  Iter: 6 conjugate gradient residual: 0.00097407 HPWL: 242258883
+[InitialPlace]  Iter: 7 conjugate gradient residual: 0.00045192 HPWL: 240082152
+[InitialPlace]  Iter: 8 conjugate gradient residual: 0.00098938 HPWL: 239762037
+[InitialPlace]  Iter: 9 conjugate gradient residual: 0.00135633 HPWL: 238728312
+[InitialPlace]  Iter: 10 conjugate gradient residual: 0.00088040 HPWL: 238532536
+[InitialPlace]  Iter: 11 conjugate gradient residual: 0.00040181 HPWL: 237589071
+[InitialPlace]  Iter: 12 conjugate gradient residual: 0.00077172 HPWL: 237377641
+[InitialPlace]  Iter: 13 conjugate gradient residual: 0.00037589 HPWL: 236293832
+[InitialPlace]  Iter: 14 conjugate gradient residual: 0.00092220 HPWL: 236211749
+[InitialPlace]  Iter: 15 conjugate gradient residual: 0.00038129 HPWL: 235078083
+[InitialPlace]  Iter: 16 conjugate gradient residual: 0.00069731 HPWL: 235049685
+[InitialPlace]  Iter: 17 conjugate gradient residual: 0.00034814 HPWL: 234246232
+[InitialPlace]  Iter: 18 conjugate gradient residual: 0.00090275 HPWL: 234068717
+[InitialPlace]  Iter: 19 conjugate gradient residual: 0.00036338 HPWL: 232507234
+[InitialPlace]  Iter: 20 conjugate gradient residual: 0.00064579 HPWL: 232441011
+[INFO GPL-0033] ---- Initialize Nesterov Region: Top-level
+[INFO GPL-0023] Placement target density:       0.5000
+[INFO GPL-0024] Movable insts average area:     13.219 um^2
+[INFO GPL-0025] Ideal bin area:                 26.437 um^2
+[INFO GPL-0026] Ideal bin count:                 34134
+[INFO GPL-0027] Total bin area:             902417.242 um^2
+[INFO GPL-0028] Bin count (X, Y):         128 ,    128
+[INFO GPL-0029] Bin size (W * H):      10.027 *  5.493 um
+[INFO GPL-0030] Number of bins:                  16384
+[INFO GPL-0007] ---- Execute Nesterov Global Placement.
+[INFO GPL-0031] HPWL: Half-Perimeter Wirelength
+Iteration | Overflow |     HPWL (um) |  HPWL(%) |   Penalty | Group
+---------------------------------------------------------------
+        0 |   0.9948 |  5.450817e+04 |   +0.00% |  1.56e-16 |      
+       10 |   0.9869 |  6.026143e+04 |  +10.55% |  2.53e-16 |      
+       20 |   0.9845 |  6.452157e+04 |   +7.07% |  4.12e-16 |      
+       30 |   0.9836 |  6.700557e+04 |   +3.85% |  6.72e-16 |      
+       40 |   0.9831 |  6.750253e+04 |   +0.74% |  1.09e-15 |      
+       50 |   0.9826 |  6.776129e+04 |   +0.38% |  1.78e-15 |      
+       60 |   0.9823 |  6.837236e+04 |   +0.90% |  2.90e-15 |      
+       70 |   0.9824 |  6.906960e+04 |   +1.02% |  4.73e-15 |      
+       80 |   0.9819 |  6.959103e+04 |   +0.75% |  7.70e-15 |      
+       90 |   0.9820 |  6.984199e+04 |   +0.36% |  1.25e-14 |      
+      100 |   0.9818 |  6.981883e+04 |   -0.03% |  2.04e-14 |      
+      110 |   0.9817 |  6.967337e+04 |   -0.21% |  3.33e-14 |      
+      120 |   0.9819 |  6.974266e+04 |   +0.10% |  5.42e-14 |      
+      130 |   0.9817 |  7.063617e+04 |   +1.28% |  8.83e-14 |      
+      140 |   0.9817 |  7.347856e+04 |   +4.02% |  1.44e-13 |      
+      150 |   0.9807 |  7.964927e+04 |   +8.40% |  2.34e-13 |      
+      160 |   0.9790 |  8.922388e+04 |  +12.02% |  3.81e-13 |      
+      170 |   0.9759 |  1.018934e+05 |  +14.20% |  6.19e-13 |      
+      180 |   0.9716 |  1.190323e+05 |  +16.82% |  1.01e-12 |      
+      190 |   0.9640 |  1.415098e+05 |  +18.88% |  1.64e-12 |      
+      200 |   0.9539 |  1.680664e+05 |  +18.77% |  2.66e-12 |      
+      210 |   0.9420 |  1.980719e+05 |  +17.85% |  4.32e-12 |      
+      220 |   0.9246 |  2.327337e+05 |  +17.50% |  7.00e-12 |      
+      230 |   0.9027 |  2.729453e+05 |  +17.28% |  1.14e-11 |      
+      240 |   0.8748 |  3.178799e+05 |  +16.46% |  1.84e-11 |      
+      250 |   0.8441 |  3.653799e+05 |  +14.94% |  2.98e-11 |      
+      260 |   0.8087 |  4.169983e+05 |  +14.13% |  4.83e-11 |      
+      270 |   0.7723 |  4.754666e+05 |  +14.02% |  7.82e-11 |      
+      280 |   0.7326 |  5.298230e+05 |  +11.43% |  1.27e-10 |      
+      290 |   0.6873 |  5.672676e+05 |   +7.07% |  2.05e-10 |      
+      300 |   0.6214 |  6.442598e+05 |  +13.57% |  3.32e-10 |      
+[INFO GPL-0038] Routability snapshot saved at iter = 305
+      304 |   0.5973 |  6.684397e+05 |          |           |      
+      310 |   0.5657 |  6.858579e+05 |   +6.46% |  5.38e-10 |      
+      320 |   0.5124 |  7.090989e+05 |   +3.39% |  8.74e-10 |      
+      330 |   0.4667 |  7.521637e+05 |   +6.07% |  1.42e-09 |      
+      340 |   0.4330 |  7.673409e+05 |   +2.02% |  2.30e-09 |      
+      350 |   0.4043 |  7.727517e+05 |   +0.71% |  3.75e-09 |      
+      360 |   0.3555 |  7.721409e+05 |   -0.08% |  6.10e-09 |      
+      370 |   0.3275 |  7.681331e+05 |   -0.52% |  9.45e-09 |      
+      380 |   0.2972 |  7.567893e+05 |   -1.48% |  1.39e-08 |      
+[INFO GPL-0040] Routability iteration: 1
+[INFO GPL-0041] Total routing overflow: 0.1104
+[INFO GPL-0042] Number of overflowed tiles: 4 (0.02%)
+[INFO GPL-0043] Average top 0.5% routing congestion: 0.9502
+[INFO GPL-0044] Average top 1.0% routing congestion: 0.9263
+[INFO GPL-0045] Average top 2.0% routing congestion: 0.9020
+[INFO GPL-0046] Average top 5.0% routing congestion: 0.8474
+[INFO GPL-0047] Routability iteration weighted routing congestion: 0.9383
+[INFO GPL-0050] Weighted routing congestion is lower than target routing congestion(1.0100), end routability optimization.
+[INFO GPL-0090] Routability finished. Target routing congestion achieved succesfully.
+Iteration | Overflow |     HPWL (um) |  HPWL(%) |   Penalty | Group
+---------------------------------------------------------------
+      390 |   0.2670 |  7.579317e+05 |   +0.15% |  2.05e-08 |      
+      400 |   0.2392 |  7.527533e+05 |   -0.68% |  3.02e-08 |      
+      410 |   0.2112 |  7.511614e+05 |   -0.21% |  4.45e-08 |      
+      420 |   0.1867 |  7.493632e+05 |   -0.24% |  6.55e-08 |      
+      430 |   0.1650 |  7.392319e+05 |   -1.35% |  9.65e-08 |      
+      440 |   0.1442 |  7.418797e+05 |   +0.36% |  1.42e-07 |      
+      450 |   0.1248 |  7.438932e+05 |   +0.27% |  2.09e-07 |      
+      460 |   0.1096 |  7.460728e+05 |   +0.29% |  3.08e-07 |      
+      466 |   0.0990 |  7.475257e+05 |          |  4.05e-07 |      
+---------------------------------------------------------------
+[INFO GPL-1001] Global placement finished at iteration 466
+[INFO GPL-1003] Routability mode iteration count: 75
+[INFO GPL-1005] Routability final weighted congestion: 0.9295
+[INFO GPL-1002] Placed Cell Area            299098.9108
+[INFO GPL-1003] Available Free Area         877754.1024
+[INFO GPL-1004] Minimum Feasible Density        0.3500 (cell_area / free_area)
+[INFO GPL-1006]   Suggested Target Densities:
+[INFO GPL-1007]     - For 90% usage of free space: 0.3786
+[INFO GPL-1008]     - For 80% usage of free space: 0.4259
+[INFO GPL-1009]     - For 50% usage of free space: 0.6815
+[INFO GPL-1011] Original area (um^2): 299098.91
+[INFO GPL-1012] Total routability artificial inflation: 0.00 (+0.00%)
+[INFO GPL-1014] Final placement area: 299098.91 (+0.00%)
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+sram matched with sram
+sram matched with sram
+[INFO ODB-0403] 0 connections made, 0 conflicts skipped.
+Updating metrics…
+Cell type report:                       Count       Area
+  Macro                                     1   17546.88
+  Buffer                                   24     174.18
+  Inverter                                748    4071.51
+  Sequential cell                         754   36937.56
+  Multi-Input combinational cell        21101  228173.50
+  Total                                 22628  286903.63
+Writing OpenROAD database to '/Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/runs/wokwi/28-openroad-globalplacement/tt_um_maw_mnistbnn.odb'…
+Writing netlist to '/Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/runs/wokwi/28-openroad-globalplacement/tt_um_maw_mnistbnn.nl.v'…
+Writing powered netlist to '/Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/runs/wokwi/28-openroad-globalplacement/tt_um_maw_mnistbnn.pnl.v'…
+Writing layout to '/Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/runs/wokwi/28-openroad-globalplacement/tt_um_maw_mnistbnn.def'…
+Writing timing constraints to '/Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/runs/wokwi/28-openroad-globalplacement/tt_um_maw_mnistbnn.sdc'…

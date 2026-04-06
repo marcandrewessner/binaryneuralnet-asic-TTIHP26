@@ -1,0 +1,147 @@
+Reading timing models for corner nom_fast_1p32V_m40C…
+Reading timing library for the 'nom_fast_1p32V_m40C' corner at '/Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/ttsetup/pdk/ciel/ihp-sg13g2/versions/c4b8b4e5e7a05f375cca3815d51b3a37721fbf5c/ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_fast_1p32V_m40C.lib'…
+Reading timing library for the 'nom_fast_1p32V_m40C' corner at '/Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/ttsetup/pdk/ciel/ihp-sg13g2/versions/c4b8b4e5e7a05f375cca3815d51b3a37721fbf5c/ihp-sg13g2/libs.ref/sg13g2_io/lib/sg13g2_io_fast_1p32V_3p6V_m40C.lib'…
+Reading timing library for the 'nom_fast_1p32V_m40C' corner at '/Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist_typ_1p20V_25C.lib'…
+Reading timing library for the 'nom_fast_1p32V_m40C' corner at '/Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist_typ_1p20V_25C.lib'…
+[WARNING STA-1140] /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist_typ_1p20V_25C.lib line 20, library RM_IHPSG13_1P_256x8_c3_bm_bist_typ_1p20V_25C already exists.
+Reading timing models for corner nom_slow_1p08V_125C…
+Reading timing library for the 'nom_slow_1p08V_125C' corner at '/Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/ttsetup/pdk/ciel/ihp-sg13g2/versions/c4b8b4e5e7a05f375cca3815d51b3a37721fbf5c/ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_slow_1p08V_125C.lib'…
+Reading timing library for the 'nom_slow_1p08V_125C' corner at '/Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/ttsetup/pdk/ciel/ihp-sg13g2/versions/c4b8b4e5e7a05f375cca3815d51b3a37721fbf5c/ihp-sg13g2/libs.ref/sg13g2_io/lib/sg13g2_io_slow_1p08V_3p0V_125C.lib'…
+Reading timing library for the 'nom_slow_1p08V_125C' corner at '/Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist_typ_1p20V_25C.lib'…
+[WARNING STA-1140] /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist_typ_1p20V_25C.lib line 20, library RM_IHPSG13_1P_256x8_c3_bm_bist_typ_1p20V_25C already exists.
+Reading timing library for the 'nom_slow_1p08V_125C' corner at '/Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist_typ_1p20V_25C.lib'…
+[WARNING STA-1140] /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist_typ_1p20V_25C.lib line 20, library RM_IHPSG13_1P_256x8_c3_bm_bist_typ_1p20V_25C already exists.
+Reading timing models for corner nom_typ_1p20V_25C…
+Reading timing library for the 'nom_typ_1p20V_25C' corner at '/Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/ttsetup/pdk/ciel/ihp-sg13g2/versions/c4b8b4e5e7a05f375cca3815d51b3a37721fbf5c/ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_typ_1p20V_25C.lib'…
+Reading timing library for the 'nom_typ_1p20V_25C' corner at '/Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/ttsetup/pdk/ciel/ihp-sg13g2/versions/c4b8b4e5e7a05f375cca3815d51b3a37721fbf5c/ihp-sg13g2/libs.ref/sg13g2_io/lib/sg13g2_io_typ_1p2V_3p3V_25C.lib'…
+Reading timing library for the 'nom_typ_1p20V_25C' corner at '/Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist_typ_1p20V_25C.lib'…
+[WARNING STA-1140] /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist_typ_1p20V_25C.lib line 20, library RM_IHPSG13_1P_256x8_c3_bm_bist_typ_1p20V_25C already exists.
+Reading timing library for the 'nom_typ_1p20V_25C' corner at '/Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist_typ_1p20V_25C.lib'…
+[WARNING STA-1140] /Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/macros/SRAM/RM_IHPSG13_1P_256x8_c3_bm_bist_typ_1p20V_25C.lib line 20, library RM_IHPSG13_1P_256x8_c3_bm_bist_typ_1p20V_25C already exists.
+Reading OpenROAD database at '/Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/runs/wokwi/35-openroad-cts/tt_um_maw_mnistbnn.odb'…
+Reading design constraints file at '/nix/store/nxfh9ig6whzb1djifv7z8km0rkvp0kxl-python3-3.13.9-env/lib/python3.13/site-packages/librelane/scripts/base.sdc'…
+[INFO] Using clock clk…
+[INFO] Setting output delay to: 20
+[INFO] Setting input delay to: 20
+[INFO] Setting load to: 0.006
+[INFO] Setting clock uncertainty to: 0.25
+[INFO] Setting clock transition to: 0.15
+[INFO] Setting timing derate to: 5%
++ repair_timing -verbose -setup -setup_margin 0.05000000000000000277555756156289135105907917022705078125 -max_buffer_percent 50
+[INFO RSZ-0100] Repair move sequence: UnbufferMove SizeUpMove SwapPinsMove BufferMove CloneMove SplitLoadMove 
+[INFO RSZ-0098] No setup violations found
++ repair_timing -verbose -hold -setup_margin 0.05000000000000000277555756156289135105907917022705078125 -hold_margin 0.1 -max_buffer_percent 50
+[INFO RSZ-0046] Found 714 endpoints with hold violations.
+Iteration | Resized | Buffers | Cloned Gates |   Area   |   WNS   |   TNS   | Endpoint
+--------------------------------------------------------------------------------------
+        0 |       0 |       0 |            0 |    +0.0% |  -0.455 | -40.669 | sram/A_ADDR[0]
+       10 |       0 |      32 |            0 |    +0.2% |  -0.293 | -36.863 | sram/A_ADDR[5]
+       20 |       0 |      79 |            0 |    +0.4% |  -0.125 | -33.725 | sram/A_ADDR[3]
+       30 |       0 |     108 |            0 |    +0.6% |  -0.098 | -32.669 | sram/A_ADDR[0]
+       40 |       0 |     119 |            0 |    +0.6% |  -0.061 | -31.719 | m.u_conv2._3435_/D
+       50 |       0 |     129 |            0 |    +0.7% |  -0.061 | -31.110 | m.u_conv2._3291_/D
+       60 |       0 |     139 |            0 |    +0.7% |  -0.061 | -30.504 | m.u_conv2._3305_/D
+       70 |       0 |     149 |            0 |    +0.8% |  -0.060 | -29.900 | m.u_conv2._3271_/D
+       80 |       0 |     159 |            0 |    +0.9% |  -0.060 | -29.296 | m.u_conv2._3363_/D
+       90 |       0 |     169 |            0 |    +0.9% |  -0.060 | -28.694 | m.u_conv2._3629_/D
+      100 |       0 |     179 |            0 |    +1.0% |  -0.060 | -28.092 | m.u_conv2._3395_/D
+      110 |       0 |     189 |            0 |    +1.0% |  -0.060 | -27.492 | m.u_conv2._3406_/D
+      120 |       0 |     199 |            0 |    +1.1% |  -0.060 | -26.891 | m.u_conv2._3490_/D
+      130 |       0 |     209 |            0 |    +1.1% |  -0.060 | -26.291 | m.u_conv2._3609_/D
+      140 |       0 |     219 |            0 |    +1.2% |  -0.060 | -25.692 | m.u_conv2._3436_/D
+      150 |       0 |     229 |            0 |    +1.2% |  -0.060 | -25.094 | m.u_conv2._3575_/D
+      160 |       0 |     239 |            0 |    +1.3% |  -0.060 | -24.496 | m.u_conv2._3284_/D
+      170 |       0 |     249 |            0 |    +1.3% |  -0.060 | -23.899 | m.u_conv2._3231_/D
+      180 |       0 |     259 |            0 |    +1.4% |  -0.060 | -23.303 | m.u_conv2._3666_/D
+      190 |       0 |     269 |            0 |    +1.4% |  -0.059 | -22.708 | m.u_conv2._3253_/D
+      200 |       0 |     279 |            0 |    +1.5% |  -0.059 | -22.114 | m.u_conv2._3301_/D
+      210 |       0 |     289 |            0 |    +1.6% |  -0.059 | -21.520 | m.u_conv2._3310_/D
+      220 |       0 |     299 |            0 |    +1.6% |  -0.059 | -20.927 | m.u_conv2._3529_/D
+      230 |       0 |     309 |            0 |    +1.7% |  -0.059 | -20.335 | m.u_conv2._3582_/D
+      240 |       0 |     319 |            0 |    +1.7% |  -0.059 | -19.743 | m.u_conv2._3402_/D
+      250 |       0 |     329 |            0 |    +1.8% |  -0.059 | -19.153 | m.u_conv2._3277_/D
+      260 |       0 |     339 |            0 |    +1.8% |  -0.059 | -18.563 | m.u_conv2._3547_/D
+      270 |       0 |     349 |            0 |    +1.9% |  -0.059 | -17.973 | m.u_conv2._3626_/D
+      280 |       0 |     359 |            0 |    +1.9% |  -0.059 | -17.384 | m.u_conv2._3270_/D
+      290 |       0 |     369 |            0 |    +2.0% |  -0.059 | -16.796 | m.u_conv2._3534_/D
+      300 |       0 |     379 |            0 |    +2.0% |  -0.059 | -16.208 | m.u_conv2._3357_/D
+      310 |       0 |     389 |            0 |    +2.1% |  -0.059 | -15.621 | m.u_conv2._3414_/D
+      320 |       0 |     399 |            0 |    +2.1% |  -0.059 | -15.035 | m.u_conv2._3344_/D
+      330 |       0 |     409 |            0 |    +2.2% |  -0.059 | -14.449 | m.u_conv2._3240_/D
+      340 |       0 |     419 |            0 |    +2.2% |  -0.058 | -13.865 | m.u_conv2._3599_/D
+      350 |       0 |     429 |            0 |    +2.3% |  -0.058 | -13.281 | m.u_conv2._3659_/D
+      360 |       0 |     439 |            0 |    +2.4% |  -0.058 | -12.699 | m.u_conv2._3548_/D
+      370 |       0 |     449 |            0 |    +2.4% |  -0.058 | -12.118 | m.u_conv2._3424_/D
+      380 |       0 |     459 |            0 |    +2.5% |  -0.058 | -11.538 | m.u_conv2._3587_/D
+      390 |       0 |     469 |            0 |    +2.5% |  -0.058 | -10.958 | m.u_conv2._3603_/D
+      400 |       0 |     479 |            0 |    +2.6% |  -0.058 | -10.380 | m.u_conv2._3470_/D
+      410 |       0 |     489 |            0 |    +2.6% |  -0.058 |  -9.803 | m.u_conv2._3495_/D
+      420 |       0 |     499 |            0 |    +2.7% |  -0.057 |  -9.229 | m.u_conv2._3431_/D
+      430 |       0 |     509 |            0 |    +2.7% |  -0.057 |  -8.656 | m.u_conv2._3372_/D
+      440 |       0 |     519 |            0 |    +2.8% |  -0.057 |  -8.085 | m.u_conv2._3257_/D
+      450 |       0 |     529 |            0 |    +2.8% |  -0.057 |  -7.516 | m.u_conv2._3533_/D
+      460 |       0 |     540 |            0 |    +2.9% |  -0.056 |  -6.908 | m.u_conv2._3663_/D
+      470 |       0 |     550 |            0 |    +3.0% |  -0.056 |  -6.345 | m.u_conv2._3250_/D
+      480 |       0 |     560 |            0 |    +3.0% |  -0.055 |  -5.786 | m.u_conv2._3563_/D
+      490 |       0 |     574 |            0 |    +3.1% |  -0.054 |  -5.180 | m.u_conv2._3252_/D
+      500 |       0 |     589 |            0 |    +3.2% |  -0.052 |  -4.486 | m.u_conv2._3355_/D
+      510 |       0 |     603 |            0 |    +3.2% |  -0.046 |  -3.935 | sram/A_ADDR[1]
+      520 |       0 |     618 |            0 |    +3.3% |  -0.046 |  -3.413 | sram/A_ADDR[1]
+      530 |       0 |     629 |            0 |    +3.4% |  -0.046 |  -3.103 | sram/A_ADDR[1]
+      540 |       0 |     640 |            0 |    +3.4% |  -0.046 |  -2.750 | sram/A_ADDR[1]
+      550 |       0 |     652 |            0 |    +3.5% |  -0.046 |  -2.316 | sram/A_ADDR[1]
+      560 |       0 |     662 |            0 |    +3.6% |  -0.046 |  -1.925 | sram/A_ADDR[1]
+      570 |       0 |     673 |            0 |    +3.6% |  -0.046 |  -1.647 | sram/A_ADDR[1]
+      580 |       0 |     684 |            0 |    +3.7% |  -0.046 |  -1.439 | sram/A_ADDR[1]
+      590 |       0 |     693 |            0 |    +3.7% |  -0.046 |  -1.265 | sram/A_ADDR[1]
+      600 |       0 |     706 |            0 |    +3.8% |  -0.046 |  -0.934 | sram/A_ADDR[1]
+      610 |       0 |     720 |            0 |    +3.9% |  -0.046 |  -0.709 | sram/A_ADDR[1]
+      620 |       0 |     733 |            0 |    +3.9% |  -0.046 |  -0.515 | sram/A_ADDR[1]
+      630 |       0 |     748 |            0 |    +4.0% |  -0.046 |  -0.285 | sram/A_ADDR[1]
+      640 |       0 |     754 |            0 |    +4.0% |  -0.046 |  -0.242 | sram/A_ADDR[1]
+      650 |       0 |     766 |            0 |    +4.1% |  -0.046 |  -0.171 | sram/A_ADDR[1]
+      660 |       0 |     782 |            0 |    +4.2% |  -0.046 |  -0.125 | sram/A_ADDR[1]
+      670 |       0 |     796 |            0 |    +4.3% |  -0.046 |  -0.102 | sram/A_ADDR[1]
+      680 |       0 |     812 |            0 |    +4.4% |  -0.046 |  -0.102 | sram/A_ADDR[1]
+      690 |       0 |     824 |            0 |    +4.4% |  -0.042 |  -0.056 | sram/A_ADDR[0]
+      700 |       0 |     831 |            0 |    +4.5% |  -0.042 |  -0.056 | sram/A_ADDR[0]
+      710 |       0 |     840 |            0 |    +4.5% |  -0.014 |  -0.014 | sram/A_ADDR[2]
+      720 |       0 |     848 |            0 |    +4.6% |   0.093 |   0.000 | m.u_conv2.u_loader._930_/D
+    final |       0 |     849 |            0 |    +4.6% |   0.101 |   0.000 | sram/A_ADDR[4]
+--------------------------------------------------------------------------------------
+[INFO RSZ-0032] Inserted 849 hold buffers.
++ detailed_placement -max_displacement  500 100 
+Placement Analysis
+---------------------------------
+total displacement       4573.2 u
+average displacement        0.2 u
+max displacement           13.6 u
+original HPWL         1202074.2 u
+legalized HPWL        1218526.5 u
+delta HPWL                    1 %
+
+[INFO DPL-0020] Mirrored 10900 instances
+[INFO DPL-0021] HPWL before          1218526.5 u
+[INFO DPL-0022] HPWL after           1202083.9 u
+[INFO DPL-0023] HPWL delta               -1.3 %
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+sram matched with sram
+sram matched with sram
+[INFO ODB-0403] 1698 connections made, 0 conflicts skipped.
+Updating metrics…
+Cell type report:                       Count       Area
+  Macro                                     1   17546.88
+  Buffer                                   24     174.18
+  Clock buffer                             78    2013.98
+  Timing Repair Buffer                   2668   27130.72
+  Inverter                                748    4071.51
+  Clock inverter                           30     277.60
+  Sequential cell                         754   36937.56
+  Multi-Input combinational cell        21336  229879.04
+  Total                                 25639  318031.48
+Writing OpenROAD database to '/Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/runs/wokwi/37-openroad-resizertimingpostcts/tt_um_maw_mnistbnn.odb'…
+Writing netlist to '/Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/runs/wokwi/37-openroad-resizertimingpostcts/tt_um_maw_mnistbnn.nl.v'…
+Writing powered netlist to '/Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/runs/wokwi/37-openroad-resizertimingpostcts/tt_um_maw_mnistbnn.pnl.v'…
+Writing layout to '/Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/runs/wokwi/37-openroad-resizertimingpostcts/tt_um_maw_mnistbnn.def'…
+Writing timing constraints to '/Users/marcandre/Desktop/Startup/TowardsBNN/binaryneuralnet-asic-TTIHP26/runs/wokwi/37-openroad-resizertimingpostcts/tt_um_maw_mnistbnn.sdc'…

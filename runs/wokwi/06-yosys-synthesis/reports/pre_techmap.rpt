@@ -1,0 +1,551 @@
+156. Printing statistics.
+
+=== $paramod$c9bc438dfe858e9d75bddd12c427471508300052\maxpool_2x2 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      332 wires
+      405 wire bits
+       13 public wires
+       77 public wire bits
+        6 ports
+       38 port bits
+      389 cells
+      126   $_ANDNOT_
+        8   $_AND_
+       28   $_DFFE_PN0P_
+        7   $_DFF_PN0_
+        1   $_DFF_PN1_
+       21   $_MUX_
+        9   $_NAND_
+       11   $_NOR_
+       19   $_NOT_
+       19   $_ORNOT_
+       66   $_OR_
+       14   $_XNOR_
+       60   $_XOR_
+
+   Area for cell type $_ANDNOT_ is unknown!
+   Area for cell type $_AND_ is unknown!
+   Area for cell type $_DFFE_PN0P_ is unknown!
+   Area for cell type $_DFF_PN0_ is unknown!
+   Area for cell type $_DFF_PN1_ is unknown!
+   Area for cell type $_MUX_ is unknown!
+   Area for cell type $_NAND_ is unknown!
+   Area for cell type $_NOR_ is unknown!
+   Area for cell type $_NOT_ is unknown!
+   Area for cell type $_ORNOT_ is unknown!
+   Area for cell type $_OR_ is unknown!
+   Area for cell type $_XNOR_ is unknown!
+   Area for cell type $_XOR_ is unknown!
+
+=== $paramod$f16bc6def46f6441af0290023d3b6045c72e1335\maxpool_2x2 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      252 wires
+      325 wire bits
+       13 public wires
+       77 public wire bits
+        6 ports
+       38 port bits
+      309 cells
+      103   $_ANDNOT_
+        9   $_AND_
+       28   $_DFFE_PN0P_
+        7   $_DFF_PN0_
+        1   $_DFF_PN1_
+       19   $_MUX_
+       10   $_NAND_
+        8   $_NOR_
+       15   $_NOT_
+       12   $_ORNOT_
+       51   $_OR_
+       13   $_XNOR_
+       33   $_XOR_
+
+   Area for cell type $_ANDNOT_ is unknown!
+   Area for cell type $_AND_ is unknown!
+   Area for cell type $_DFFE_PN0P_ is unknown!
+   Area for cell type $_DFF_PN0_ is unknown!
+   Area for cell type $_DFF_PN1_ is unknown!
+   Area for cell type $_MUX_ is unknown!
+   Area for cell type $_NAND_ is unknown!
+   Area for cell type $_NOR_ is unknown!
+   Area for cell type $_NOT_ is unknown!
+   Area for cell type $_ORNOT_ is unknown!
+   Area for cell type $_OR_ is unknown!
+   Area for cell type $_XNOR_ is unknown!
+   Area for cell type $_XOR_ is unknown!
+
+=== classification_tree ===
+
+        +----------Local Count, excluding submodules.
+        | 
+     1788 wires
+     1854 wire bits
+        2 public wires
+       68 public wire bits
+        2 ports
+       68 port bits
+     1790 cells
+      481   $_ANDNOT_
+       45   $_AND_
+      299   $_MUX_
+       28   $_NAND_
+      154   $_NOR_
+      110   $_NOT_
+       89   $_ORNOT_
+      198   $_OR_
+      192   $_XNOR_
+      194   $_XOR_
+
+   Area for cell type $_ANDNOT_ is unknown!
+   Area for cell type $_AND_ is unknown!
+   Area for cell type $_MUX_ is unknown!
+   Area for cell type $_NAND_ is unknown!
+   Area for cell type $_NOR_ is unknown!
+   Area for cell type $_NOT_ is unknown!
+   Area for cell type $_ORNOT_ is unknown!
+   Area for cell type $_OR_ is unknown!
+   Area for cell type $_XNOR_ is unknown!
+   Area for cell type $_XOR_ is unknown!
+
+=== conv_layer1 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      269 wires
+      406 wire bits
+       21 public wires
+      149 public wire bits
+        6 ports
+       38 port bits
+      322 cells
+       91   $_ANDNOT_
+        9   $_AND_
+       11   $_DFFE_PN0P_
+       18   $_DFFE_PP_
+        5   $_DFF_PN0_
+        1   $_DFF_PN1_
+       41   $_MUX_
+       14   $_NAND_
+       19   $_NOR_
+       17   $_NOT_
+        8   $_ORNOT_
+       39   $_OR_
+       11   $_XNOR_
+       38   $_XOR_
+        2 submodules
+        1   conv_weights_3x3_l1
+        1   load_conv_op_3x6
+
+   Area for cell type $_ANDNOT_ is unknown!
+   Area for cell type $_AND_ is unknown!
+   Area for cell type $_DFFE_PN0N_ is unknown!
+   Area for cell type $_DFFE_PN0P_ is unknown!
+   Area for cell type $_DFFE_PP_ is unknown!
+   Area for cell type $_DFF_PN0_ is unknown!
+   Area for cell type $_DFF_PN1_ is unknown!
+   Area for cell type $_MUX_ is unknown!
+   Area for cell type $_NAND_ is unknown!
+   Area for cell type $_NOR_ is unknown!
+   Area for cell type $_NOT_ is unknown!
+   Area for cell type $_ORNOT_ is unknown!
+   Area for cell type $_OR_ is unknown!
+   Area for cell type $_XNOR_ is unknown!
+   Area for cell type $_XOR_ is unknown!
+
+=== conv_layer2 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+     1668 wires
+     2403 wire bits
+       85 public wires
+      609 public wire bits
+        6 ports
+       38 port bits
+     2312 cells
+      883   $_ANDNOT_
+       10   $_AND_
+      459   $_DFFE_PN0P_
+       18   $_DFFE_PP_
+        6   $_DFF_PN0_
+        1   $_DFF_PN1_
+      297   $_MUX_
+        9   $_NAND_
+       32   $_NOR_
+       32   $_NOT_
+       50   $_ORNOT_
+      447   $_OR_
+        8   $_XNOR_
+       60   $_XOR_
+        2 submodules
+        1   conv_weights_3x3_l2
+        1   load_conv_op_3x6
+
+   Area for cell type $_ANDNOT_ is unknown!
+   Area for cell type $_AND_ is unknown!
+   Area for cell type $_DFFE_PN0N_ is unknown!
+   Area for cell type $_DFFE_PN0P_ is unknown!
+   Area for cell type $_DFFE_PP_ is unknown!
+   Area for cell type $_DFF_PN0_ is unknown!
+   Area for cell type $_DFF_PN1_ is unknown!
+   Area for cell type $_MUX_ is unknown!
+   Area for cell type $_NAND_ is unknown!
+   Area for cell type $_NOR_ is unknown!
+   Area for cell type $_NOT_ is unknown!
+   Area for cell type $_ORNOT_ is unknown!
+   Area for cell type $_OR_ is unknown!
+   Area for cell type $_XNOR_ is unknown!
+   Area for cell type $_XOR_ is unknown!
+
+=== conv_layer3 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      199 wires
+      428 wire bits
+       10 public wires
+      174 public wire bits
+        7 ports
+      102 port bits
+      284 cells
+      109   $_ANDNOT_
+       11   $_AND_
+       68   $_DFFE_PN0P_
+        3   $_DFF_PN0_
+        1   $_DFF_PN1_
+       18   $_MUX_
+       11   $_NAND_
+        3   $_NOR_
+        6   $_NOT_
+       11   $_ORNOT_
+       41   $_OR_
+        2   $_XOR_
+        1 submodules
+        1   conv_weights_2x2_l3
+
+   Area for cell type $_ANDNOT_ is unknown!
+   Area for cell type $_AND_ is unknown!
+   Area for cell type $_DFFE_PN0P_ is unknown!
+   Area for cell type $_DFF_PN0_ is unknown!
+   Area for cell type $_DFF_PN1_ is unknown!
+   Area for cell type $_MUX_ is unknown!
+   Area for cell type $_NAND_ is unknown!
+   Area for cell type $_NOR_ is unknown!
+   Area for cell type $_NOT_ is unknown!
+   Area for cell type $_ORNOT_ is unknown!
+   Area for cell type $_OR_ is unknown!
+   Area for cell type $_XNOR_ is unknown!
+   Area for cell type $_XOR_ is unknown!
+
+=== conv_weights_2x2_l3 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+    21290 wires
+    21416 wire bits
+        2 public wires
+      128 public wire bits
+        2 ports
+      128 port bits
+    21352 cells
+     7099   $_ANDNOT_
+      143   $_AND_
+      320   $_NAND_
+     2275   $_NOR_
+      627   $_NOT_
+      817   $_ORNOT_
+     2005   $_OR_
+     2051   $_XNOR_
+     6015   $_XOR_
+
+   Area for cell type $_ANDNOT_ is unknown!
+   Area for cell type $_AND_ is unknown!
+   Area for cell type $_NAND_ is unknown!
+   Area for cell type $_NOR_ is unknown!
+   Area for cell type $_NOT_ is unknown!
+   Area for cell type $_ORNOT_ is unknown!
+   Area for cell type $_OR_ is unknown!
+   Area for cell type $_XNOR_ is unknown!
+   Area for cell type $_XOR_ is unknown!
+
+=== conv_weights_3x3_l1 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      209 wires
+      246 wire bits
+        9 public wires
+       46 public wire bits
+        9 ports
+       46 port bits
+      216 cells
+       48   $_ANDNOT_
+        8   $_AND_
+       12   $_MUX_
+       38   $_NOT_
+        1   $_ORNOT_
+       25   $_OR_
+       14   $_XNOR_
+       70   $_XOR_
+
+   Area for cell type $_ANDNOT_ is unknown!
+   Area for cell type $_AND_ is unknown!
+   Area for cell type $_MUX_ is unknown!
+   Area for cell type $_NOT_ is unknown!
+   Area for cell type $_ORNOT_ is unknown!
+   Area for cell type $_OR_ is unknown!
+   Area for cell type $_XNOR_ is unknown!
+   Area for cell type $_XOR_ is unknown!
+
+=== conv_weights_3x3_l2 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      492 wires
+      532 wire bits
+        9 public wires
+       49 public wire bits
+        9 ports
+       49 port bits
+      499 cells
+       61   $_ANDNOT_
+       11   $_AND_
+      179   $_MUX_
+        5   $_NAND_
+        1   $_NOR_
+       42   $_NOT_
+        4   $_ORNOT_
+      110   $_OR_
+       15   $_XNOR_
+       71   $_XOR_
+
+   Area for cell type $_ANDNOT_ is unknown!
+   Area for cell type $_AND_ is unknown!
+   Area for cell type $_MUX_ is unknown!
+   Area for cell type $_NAND_ is unknown!
+   Area for cell type $_NOR_ is unknown!
+   Area for cell type $_NOT_ is unknown!
+   Area for cell type $_ORNOT_ is unknown!
+   Area for cell type $_OR_ is unknown!
+   Area for cell type $_XNOR_ is unknown!
+   Area for cell type $_XOR_ is unknown!
+
+=== load_conv_op_3x6 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      496 wires
+      595 wire bits
+       12 public wires
+       96 public wire bits
+       10 ports
+       80 port bits
+      543 cells
+      153   $_ANDNOT_
+       11   $_AND_
+        8   $_DFFE_PN0N_
+       19   $_DFFE_PN0P_
+        7   $_DFF_PN0_
+        1   $_DFF_PN1_
+      128   $_MUX_
+       23   $_NAND_
+       13   $_NOR_
+       32   $_NOT_
+        9   $_ORNOT_
+       58   $_OR_
+       11   $_XNOR_
+       70   $_XOR_
+
+   Area for cell type $_ANDNOT_ is unknown!
+   Area for cell type $_AND_ is unknown!
+   Area for cell type $_DFFE_PN0N_ is unknown!
+   Area for cell type $_DFFE_PN0P_ is unknown!
+   Area for cell type $_DFF_PN0_ is unknown!
+   Area for cell type $_DFF_PN1_ is unknown!
+   Area for cell type $_MUX_ is unknown!
+   Area for cell type $_NAND_ is unknown!
+   Area for cell type $_NOR_ is unknown!
+   Area for cell type $_NOT_ is unknown!
+   Area for cell type $_ORNOT_ is unknown!
+   Area for cell type $_OR_ is unknown!
+   Area for cell type $_XNOR_ is unknown!
+   Area for cell type $_XOR_ is unknown!
+
+=== main ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      343 wires
+      600 wire bits
+       31 public wires
+      288 public wire bits
+       12 ports
+       50 port bits
+      351 cells
+      106   $_ANDNOT_
+      138   $_AND_
+        1   $_DFFE_PN0P_
+       11   $_DFF_PN0_
+        1   $_DFF_PN1_
+        1   $_MUX_
+       25   $_NAND_
+       68   $_OR_
+        7 submodules
+        1   $paramod$c9bc438dfe858e9d75bddd12c427471508300052\maxpool_2x2
+        1   $paramod$f16bc6def46f6441af0290023d3b6045c72e1335\maxpool_2x2
+        1   classification_tree
+        1   conv_layer1
+        1   conv_layer2
+        1   conv_layer3
+        1   mnist_loader
+
+   Area for cell type $_ANDNOT_ is unknown!
+   Area for cell type $_AND_ is unknown!
+   Area for cell type $_DFFE_PN0N_ is unknown!
+   Area for cell type $_DFFE_PN0P_ is unknown!
+   Area for cell type $_DFFE_PP_ is unknown!
+   Area for cell type $_DFF_PN0_ is unknown!
+   Area for cell type $_DFF_PN1_ is unknown!
+   Area for cell type $_MUX_ is unknown!
+   Area for cell type $_NAND_ is unknown!
+   Area for cell type $_NOR_ is unknown!
+   Area for cell type $_NOT_ is unknown!
+   Area for cell type $_ORNOT_ is unknown!
+   Area for cell type $_OR_ is unknown!
+   Area for cell type $_XNOR_ is unknown!
+   Area for cell type $_XOR_ is unknown!
+
+=== mnist_loader ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       36 wires
+       90 wire bits
+        9 public wires
+       51 public wire bits
+        7 ports
+       46 port bits
+       54 cells
+       18   $_ANDNOT_
+        3   $_AND_
+        7   $_DFFE_PN0P_
+        1   $_DFF_PN1_
+        4   $_NAND_
+        4   $_NOR_
+        3   $_NOT_
+        9   $_OR_
+        5   $_XOR_
+
+   Area for cell type $_ANDNOT_ is unknown!
+   Area for cell type $_AND_ is unknown!
+   Area for cell type $_DFFE_PN0P_ is unknown!
+   Area for cell type $_DFF_PN1_ is unknown!
+   Area for cell type $_NAND_ is unknown!
+   Area for cell type $_NOR_ is unknown!
+   Area for cell type $_NOT_ is unknown!
+   Area for cell type $_OR_ is unknown!
+   Area for cell type $_XOR_ is unknown!
+
+=== tt_um_maw_mnistbnn ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       16 wires
+       82 wire bits
+       16 public wires
+       82 public wire bits
+        8 ports
+       43 port bits
+        1 cells
+        1   RM_IHPSG13_1P_256x8_c3_bm_bist
+        1 submodules
+        1   main
+
+   Area for cell type $_ANDNOT_ is unknown!
+   Area for cell type $_AND_ is unknown!
+   Area for cell type $_DFFE_PN0N_ is unknown!
+   Area for cell type $_DFFE_PN0P_ is unknown!
+   Area for cell type $_DFFE_PP_ is unknown!
+   Area for cell type $_DFF_PN0_ is unknown!
+   Area for cell type $_DFF_PN1_ is unknown!
+   Area for cell type $_MUX_ is unknown!
+   Area for cell type $_NAND_ is unknown!
+   Area for cell type $_NOR_ is unknown!
+   Area for cell type $_NOT_ is unknown!
+   Area for cell type $_ORNOT_ is unknown!
+   Area for cell type $_OR_ is unknown!
+   Area for cell type $_XNOR_ is unknown!
+   Area for cell type $_XOR_ is unknown!
+   Area for cell type \RM_IHPSG13_1P_256x8_c3_bm_bist is unknown!
+
+=== design hierarchy ===
+
+        +----------Count including submodules.
+        | 
+    28965 tt_um_maw_mnistbnn
+      351 main
+      389   $paramod$c9bc438dfe858e9d75bddd12c427471508300052\maxpool_2x2
+      309   $paramod$f16bc6def46f6441af0290023d3b6045c72e1335\maxpool_2x2
+     1790   classification_tree
+      322   conv_layer1
+      216     conv_weights_3x3_l1
+      543     load_conv_op_3x6
+     2312   conv_layer2
+      499     conv_weights_3x3_l2
+      543     load_conv_op_3x6
+      284   conv_layer3
+    21352     conv_weights_2x2_l3
+       54   mnist_loader
+
+        +----------Count including submodules.
+        | 
+    27886 wires
+    29977 wire bits
+      244 public wires
+     1990 public wire bits
+      100 ports
+      844 port bits
+        - memories
+        - memory bits
+        - processes
+    28965 cells
+     9431   $_ANDNOT_
+      417   $_AND_
+       16   $_DFFE_PN0N_
+      640   $_DFFE_PN0P_
+       36   $_DFFE_PP_
+       53   $_DFF_PN0_
+        9   $_DFF_PN1_
+     1143   $_MUX_
+      481   $_NAND_
+     2533   $_NOR_
+      973   $_NOT_
+     1029   $_ORNOT_
+     3175   $_OR_
+     2340   $_XNOR_
+     6688   $_XOR_
+        1   RM_IHPSG13_1P_256x8_c3_bm_bist
+        1 submodules
+        1   main
+
+   Area for cell type $_ANDNOT_ is unknown!
+   Area for cell type $_AND_ is unknown!
+   Area for cell type $_DFFE_PN0N_ is unknown!
+   Area for cell type $_DFFE_PN0P_ is unknown!
+   Area for cell type $_DFFE_PP_ is unknown!
+   Area for cell type $_DFF_PN0_ is unknown!
+   Area for cell type $_DFF_PN1_ is unknown!
+   Area for cell type $_MUX_ is unknown!
+   Area for cell type $_NAND_ is unknown!
+   Area for cell type $_NOR_ is unknown!
+   Area for cell type $_NOT_ is unknown!
+   Area for cell type $_ORNOT_ is unknown!
+   Area for cell type $_OR_ is unknown!
+   Area for cell type $_XNOR_ is unknown!
+   Area for cell type $_XOR_ is unknown!
+   Area for cell type \RM_IHPSG13_1P_256x8_c3_bm_bist is unknown!
+
